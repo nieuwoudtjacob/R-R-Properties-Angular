@@ -1,0 +1,548 @@
+<!-- Header Starts -->
+<header id="header" class="fixed-top d-flex align-items-center  header-transparent"
+    [style.background-color]="(top == false) ? 'rgb(31 110 212 / 95%)' : 'transparent'">
+    <div class="container d-flex align-items-center justify-content-between" style="max-width: 90%;">
+        <a href="index.html" style="margin-right: 20px;"><img src="assets/Images/PV4PLogo.PNG" alt=""
+                style="width: 60px;"></a>
+        <div class="logo">
+
+            <h1 style="margin-top: 4%;"> <a href="index.html">South African Council for the Property Valuers
+                    Profession</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li class="dropdown "><a class="nav-link scrollto " href="#hero"
+                        (click)="goToContruction(false)"><span>Home</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a class="nav-link scrollto" href="#about" (click)="goToContruction(false)">About</a>
+                        </li>
+                        <li><a class="nav-link scrollto" href="#services" (click)="goToContruction(false)">Services</a>
+                        </li>
+                        <li><a class="nav-link scrollto " href="#portfolio"
+                                (click)="goToContruction(false)">Portfolio</a></li>
+                        <li><a class="nav-link scrollto" href="#faq" (click)="goToContruction(false)">FAQ</a></li>
+                        <li><a class="nav-link scrollto" href="#team" (click)="goToContruction(false)">Team</a></li>
+                        <li><a class="nav-link scrollto" href="#contact" (click)="goToContruction(false)">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="announcements">Announcements</a></li>
+                <li><a href="examinations">Examinations</a></li>
+
+                <li class="dropdown"><a href="events"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="notice">Notice</a></li>
+
+                        <li><a href="gallery">Gallery</a></li>
+
+                        <li class="dropdown"><a href=""><span>Conferences,
+                                    Workshops &
+                                    Seminars</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="practicalworkschool">Practical Workschool</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="TendersAndJobs" class="active">Tenders/Jobs</a></li>
+
+
+                <li class="dropdown"><a href="registrations"><span>Registrations</span> <i
+                            class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="HowToRegister">How to register</a></li>
+                        <li><a href="AccreditedProgrammes">
+                                Accredited Programmes</a></li>
+                        <li><a href="E-Log">e-Log Maintain Work Record</a></li>
+                        <li><a href="CET">
+                                CPD Activities and Allocation</a></li>
+                        <li><a href="RestrictionCodes">Restriction Codes</a></li>
+                        <li><a href="Learnership">
+                                Learnership</a></li>
+
+                    </ul>
+                </li>
+
+
+
+                <li><a href="ProfessionalFees">Professional Fees</a></li>
+
+
+
+                <li class="dropdown"><a href="standards"><span>Standards</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="MunicipalRatingStandards">
+                                Municipal Rating Standards</a></li>
+                        <li><a href="InternationalValuationStandards">
+                                International Valuation Standards</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown"><a href="LodgeALegalCaseOrComplaint"><span>Legal</span> <i
+                            class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="governance">Governance</a></li>
+                        <!-- <li><a href="">Lodge a legal case</a></li>
+                        <li class="dropdown"><a href=""><span>Code of conduct</span> <i
+                                    class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="LodgeALegalCaseOrComplaint">Lodge a legal case or
+                                        complaint</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </li>
+
+                <li class="dropdown"><a href="FindValuer"><span>Find Valuer</span></a>
+                    <!-- <ul>
+                    <li><a href="#" (click)="goToContruction(true)">
+                            Name search</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">Search by Council Number</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">
+                            Search by Category</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">Member Search</a></li>
+                </ul> -->
+                </li>
+
+
+
+
+
+
+
+                <li><a class="nav-link scrollto" (click)="toApp()" href="">Log In</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+    </div>
+</header>
+
+
+<!-- Main Content Starts -->
+
+<div class="section-title" data-aos="zoom-out" style="padding-top: 100px;padding-left: 10px;">
+    <h2 style="font-size: 20px;">Tenders, Jobs and Bursary Adverts </h2>
+</div>
+
+
+<!-- <img class="center" src="../../../assets/Images/ABSA_Group_Limited_Logo.svg.png" data-aos="zoom-out">
+<div class="section-title" data-aos="zoom-out" style="padding-top: 10px;">
+    <h4 style="font-size: 16px;text-align: center;">VALUATION SERVICES – ABSA BANK </h4>
+</div>
+<br>
+<div style="margin-left: 20%;font-size: 14px;padding-right: 12%;">
+    <p>Requested to tender for the provision of valuation services to Absa Bank. </p>
+    <p>Closing date: 30 September 2023</p>
+    <p><b class="hyper" (click)="openABSAWordDoc()">Click here for the response form. </b></p>
+</div>
+<br>
+<br>
+<mat-divider></mat-divider>
+
+<img class="center" src="../../../assets/Images/PV4PLogo.PNG" data-aos="zoom-out">
+<div class="section-title" data-aos="zoom-out" style="padding-top: 10px;">
+    <h4 style="font-size: 16px;text-align: center;">APPOINTMENT OF DISCIPLINARY TRIBUNAL: CHAIRPERSON </h4>
+</div>
+<div style="margin-left: 20%;font-size: 14px;padding-right: 12%;">
+    <p><b>APPLICATIONS ARE INVITED FROM SUITABLY QUALIFIED AND EXPERIENCED CANDIDATES FOR APPOINTMENT AS CHAIRPERSON OF
+            THE STATUTORY DISCIPLINARY TRIBUNAL OF THE SOUTH AFRICAN COUNCIL FOR THE PROPERTY VALUERS PROFESSION
+            (SACPVP)</b></p>
+    <p>CLOSING DATE: 31 August 2023</p>
+    <p>The SACPVP has the statutory mandate to appoint a disciplinary tribunal in terms of Section 31 (1) of the
+        Property Valuers Profession Act, 2000 (Act No. 47 of 2000) to hear a charge of improper conduct against a
+        registered person, if a registered person charged denies the charge or fails to comply with Section 30 (3)(b) of
+        the aforesaid Act. The SACPVP is obliged by its enabling Legislation to hear disciplinary tribunals in terms of
+        Section 33 of the Constitution of the Republic of South Africa (Act No. 108 of 1996). </p>
+    <p>The disciplinary tribunal consists of three members. Legislation further prescribes that one member must be a
+        person qualified in law with appropriate experience. This member will be appointed as the Chairperson of the
+        disciplinary tribunal. </p>
+    <br>
+    <p><b>The duties and the scope of work of a Chairperson of the disciplinary tribunal include, but not limited
+            to:</b></p>
+    <ol type="1">
+        <li>Ensure all disciplinary hearings are conducted in accordance with Section 33 of the Constitution of the
+            Republic of South Africa. </li>
+        <li>Ensure that all disciplinary tribunals are decided, with fully motivated reasons, within a reasonable time
+            from the date of their hearing and furnish same to SACPVP. </li>
+        <li>Direct the activities of the disciplinary tribunal to achieve items 1 and 2 above. </li>
+    </ol>
+    <br>
+    <p>The nature of the appointment requires that the applicant demonstrates leaderships qualities, integrity,
+        independence, dedication, good communication skills, analytical ability and independent judgment. The applicant
+        must further possess and demonstrate the following academic qualifications, experience and competencies: </p>
+    <ol type="1">
+        <li>Bachelor of Law degree. </li>
+        <li>Eight (8) years post-admission experience as an Attorney or Advocate. </li>
+        <li>Knowledge of Constitutional and Administrative Law. </li>
+        <li>Understanding of the Property Valuers Profession Act, 2000 and the Legislation that governs the Councils in
+            the Built Environment (BE), including the Council for the Built Environment Act, 2000 (Act No. 43 of 2000)
+            (the CBE Act). </li>
+    </ol>
+    <p>Remuneration is at rate of R1 800.00 per hour, excluding Value Added Tax (VAT). In addition, travel expenses will
+        be reimbursed. The appointment will be for a period of three (3) years; and appointees will be utilized on a
+        rotational basis. </p>
+    <br>
+    <p><b>Applications must include:</b></p>
+    <ol type="1">
+        <li>Motivation justifying the applicant’s suitability. </li>
+        <li>Comprehensive curriculum vitae (CV). </li>
+        <li>Certified copies of identity document and qualifications. </li>
+        <li>At least two (2) copies of ruling/judgments handed down where the applicant has served as a presiding
+            officer. </li>
+    </ol>
+    <p>Suitably qualified candidates are required to submit their applications to: <a
+            href="mailto:legal@sacpvp.co.za"><b class="hyper">legal@sacpvp.co.za</b></a> </p>
+    <p>Enquiries: G Mashishi </p>
+    <p>Tel: 012 348 8643 </p>
+    <p><b class="hyper" (click)="openChairPersonPDF()">Click here to download the PDF document.</b> </p>
+</div>
+<br>
+<br>
+<mat-divider></mat-divider> -->
+
+<img class="center" src="../../../assets/Images/PV4PLogo.PNG" data-aos="zoom-out">
+<div class="section-title" data-aos="zoom-out" style="padding-top: 10px;">
+    <h4 style="font-size: 16px;text-align: center;">APPOINTMENT OF DISCIPLINARY TRIBUNAL: PRO FORMA PROSECUTOR </h4>
+</div>
+<div style="margin-left: 20%;font-size: 14px;padding-right: 12%;">
+    <p><b>APPLICATIONS ARE INVITED FROM SUITABLY QUALIFIED AND EXPERIENCED
+            CANDIDATES FOR APPOINTMENT AS PR FORMA PROSECUTOR OF THE STATUTORY
+            DISCIPLINARY TRIBUNAL OF THE SOUTH AFRICAN COUNCIL FOR THE PROPERTY
+            VALUERS PROFESSION (SACPVP) </b></p>
+    <p>CLOSING DATE: 29 February 2024</p>
+    <p>The SACPVP has the statutory mandate to appoint a Disciplinary Tribunal in terms of Section 32 (2)
+        of the Property Valuers Profession Act, 2000 (Act No. 47 of 2000) to hear a charge of improper
+        conduct against a registered person, if a registered person charged denies the charge or fails to
+        comply with Section 30 (3) (b) of the aforesaid Act. The SACPVP is obligated by its enabling
+        Legislation to hear Disciplinary Tribunals in terms of Section 33 of the Constitution of the Republic
+        of South Africa (Act No. 108 of 1996). </p>
+    <p>The Disciplinary Tribunal consists of three members. Legislation further prescribes that one member
+        must be a person qualified in law with appropriate experience. This member will be appointed as the
+        Pro Forma Prosecutor of the Disciplinary Tribunal. </p>
+    <br>
+    <p><b>
+            The duties and the scope of work of a Pro Forma Prosecutor of the Disciplinary Tribunal include, but
+            not limited to:
+        </b></p>
+    <ol type="1">
+        <li>Peruse the Investigation Report and draft the charges against a registered person.</li>
+        <li>Ensure all disciplinary hearings are conducted in accordance with Section 33 of the
+            Constitution of the Republic of South Africa. </li>
+        <li>Ensure that all Disciplinary Tribunals are decided, with fully motivated reasons, within a
+            reasonable time from the date of their hearing. </li>
+        <li>Attend hearings and in terms of Section 32 (7) of the Property Valuers Profession Act, 2000.</li>
+    </ol>
+    <br>
+    <p>The nature of the appointment requires that the applicant demonstrates leadership qualities,
+        integrity, independence, dedication, good communication skills, analytical ability and independent
+        judgement. The applicant must further possess and demonstrate the following academic
+        qualifications, experience and competencies: </p>
+
+    <ol type="1">
+        <li>Bachelor of Law degree. </li>
+        <li>Eight (7) years post-admission experience as an Attorney or Advocate. </li>
+        <li>Knowledge of Constitutional and Administrative Law. </li>
+        <li>Understanding of the Property Valuers Profession Act, 2000 and the Legislation that governs
+            the Councils in the Built Environment (BE), including the Council for the Built Environment
+            Act, 2000 (Act No. 43 of 2000) (the CBE Act).</li>
+    </ol>
+    <br>
+    <p>Remuneration is at a rate of R1500.00 per hour, excluding Value Added Tax (VAT). In addition, travel
+        expenses will be reimbursed. The appointment will be for a period of three (3) years; and appointees
+        will be utilised on a rotational basis. </p>
+    <br>
+    <p><b>Applications must include:</b></p>
+    <ol type="1">
+        <li>Motivation justifying the applicant’s suitability. </li>
+        <li>Comprehensive curriculum vitae (CV). </li>
+        <li>Certified copies of identity document and qualifications. </li>
+        <li>At least two (2) copies of ruling/judgment handed down where the applicant has served as a presiding
+            officer. </li>
+    </ol>
+    <br>
+    <p>Suitably qualified candidates are required to submit their applications to: <a
+            href="mailto:legal@sacpvp.co.za"><b class="hyper">legal@sacpvp.co.za</b></a></p>
+    <p>Enquiries: G Mashishi</p>
+    <p>Tel: 012 348 8643 </p>
+    <p><b class="hyper" (click)="openProsecutorPDF()">Click here to download the PDF document.</b> </p>
+</div>
+<br>
+<br>
+<mat-divider></mat-divider>
+<br>
+<br>
+<img class="center" src="../../../assets/Images/PV4PLogo.PNG" data-aos="zoom-out">
+<div class="section-title" data-aos="zoom-out" style="padding-top: 10px;">
+    <h4 style="font-size: 16px;text-align: center;">APPOINTMENT OF DISCIPLINARY TRIBUNAL: CHAIRPERSON </h4>
+</div>
+<div style="margin-left: 20%;font-size: 14px;padding-right: 12%;">
+    <p><b>APPLICATIONS ARE INVITED FROM SUITABLY QUALIFIED AND EXPERIENCED
+            CANDIDATES FOR APPOINTMENT AS CHAIRPERSON OF THE STATUTORY DISCIPLINARY
+            TRIBUNAL OF THE SOUTH AFRICAN COUNCIL FOR THE PROPERTY VALUERS
+            PROFESSION (SACPVP) </b></p>
+    <p>CLOSING DATE: 29 February 2024</p>
+    <p>The SACPVP has the statutory mandate to appoint a Disciplinary Tribunal in terms of Section 31 (1)
+        of the Property Valuers Profession Act, 2000 (Act No. 47 of 2000) to hear a charge of improper
+        conduct against a registered person, if a registered person charged denies the charge or fails to
+        comply with Section 30 (3) (b) of the aforesaid Act. The SACPVP is obligated by its enabling
+        Legislation to hear Disciplinary Tribunals in terms of Section 33 of the Constitution of the Republic
+        of South Africa (Act No. 108 of 1996). </p>
+    <p>The Disciplinary Tribunal consists of three members. Legislation further prescribes that one member
+        must be a person qualified in law with appropriate experience. This member will be appointed as the
+        Chairperson of the Disciplinary Tribunal. </p>
+    <br>
+    <p><b>
+            The duties and the scope of work of a Chairperson of the Disciplinary Tribunal include, but not limited
+            to:
+        </b></p>
+    <ol type="1">
+        <li>Ensure all disciplinary hearings are conducted in accordance with Section 33 of the
+            Constitution of the Republic of South Africa.</li>
+        <li>Ensure that all Disciplinary Tribunals are decided, with fully motivated reasons, within a
+            reasonable time from the date of their hearing and furnish same to SACPVP. </li>
+        <li>Direct the activities of the Disciplinary Tribunal to achieve items 1 and 2 above. </li>
+    </ol>
+    <br>
+    <p>The nature of the appointment requires that the applicant demonstrates leadership qualities,
+        integrity, independence, dedication, good communication skills, analytical ability and independent
+        judgement. The applicant must further possess and demonstrate the following academic
+        qualifications, experience and competencies:</p>
+
+    <ol type="1">
+        <li>Bachelor of Law degree. </li>
+        <li>Eight (7) years post-admission experience as an Attorney or Advocate. </li>
+        <li>Knowledge of Constitutional and Administrative Law. </li>
+        <li>Understanding of the Property Valuers Profession Act, 2000 and the Legislation that governs
+            the Councils in the Built Environment (BE), including the Council for the Built Environment
+            Act, 2000 (Act No. 43 of 2000) (the CBE Act).</li>
+    </ol>
+
+    <br>
+    <p>
+        Remuneration is at a rate of R1800.00 per hour, excluding Value Added Tax (VAT). In addition, travel
+        expenses will be reimbursed. The appointment will be for a period of three (3) years; and appointees
+        will be utilised on a rotational basis.
+    </p>
+    <br>
+    <p style="font-weight: bold;">Applications must include:</p>
+    <ol type="1">
+        <li>Motivation justifying the applicant’s suitability.</li>
+        <li>Comprehensive curriculum vitae (CV).</li>
+        <li>Certified copies of identity document and qualifications.</li>
+        <li>At least two (2) copies of ruling/judgements handed down where the applicant has served as
+            a presiding officer.</li>
+    </ol>
+    <p>Suitably qualified candidates are required to submit their applications to: <a
+            href="mailto:legal@sacpvp.co.za"><b class="hyper">legal@sacpvp.co.za</b></a></p>
+    <p>Enquiries: G Mashishi</p>
+    <p>Tel: 012 348 8643 </p>
+    <p><b class="hyper" (click)="openAttourneyPDF()">Click here to download the PDF document.</b> </p>
+</div>
+<br>
+<br>
+<mat-divider></mat-divider>
+<!-- 
+<img class="center" src="../../../assets/Images/PV4PLogo.PNG" data-aos="zoom-out">
+<div class="section-title" data-aos="zoom-out" style="padding-top: 10px;">
+    <h4 style="font-size: 16px;text-align: center;">REGISTRAR – SOUTH AFRICAN COUNCIL FOR THE PROPERTY VALUERS
+        PROFESSION </h4>
+</div>
+
+<div class="blog-card">
+    <div class="meta">
+        <div class="photo"
+            style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
+
+    </div>
+    <div class="description" style="font-size: 14px;" data-aos="zoom-out">
+        <h1>South African Council for Property Valuers Profession</h1>
+        <h2>Post: Registrar </h2>
+        <p> No of Post: 1</p>
+        <p> Job Location: Job Location: Lynnwood, Pretoria, Gauteng Province </p>
+        <p>Closing Date: Closing Date: 20 August 2023</p>
+        <p class="read-more">
+        </p>
+    </div>
+</div>
+<br>
+
+<div style="margin-left: 20%;font-size: 14px;padding-right: 12%;">
+    <p>South African Council for Property Valuers Profession ( “SACPVP” or “Council”) is seeking a dynamic and
+        innovative Registrar to join the Council. The Registrar is the highest-ranking position in the SACPVP,
+        responsible for leadership and making major decisions for the organization. </p>
+    <p>The incumbent assumes the role of the Chief Executive Officer of SACPVP. An all-inclusive market related
+        compensation package is offered. <b>Please note that this is a re-advertisement and those who previously applied
+            must re-apply.</b> </p>
+    <br>
+    <p><b>JOB REQUIREMENTS ARE AS FOLLOWS:</b></p>
+    <ul>
+        <li>A minimum of a Bachelor Degree in the Public or Business Administration, B.Com Finance as recognized by SAQA
+            and qualification accredited by SACPVP; </li>
+        <li>Minimum of 3 years’ experience at the Management level; </li>
+        <li>Extensive experience in administration; </li>
+        <li>A valid driver’s license. </li>
+    </ul>
+    <br>
+    <p><b>Skills and Competency</b></p>
+    <ul>
+        <li>Ability to communicate at all levels, customer service skills, administration skills, planning and execution
+            skills, risk management, project management skills, financial management skills, knowledge and ability to
+            interpret legislations and apply policies, excellent conflict resolution skills and attention to detail, a
+            strong computer literacy, database knowledge as well as be well-acquainted with the use of the internet and
+            understanding of changing technology for the smooth functioning of the administration. </li>
+        <li><b>The following will be an added advantage:</b> Registration with the SACPVP as a Professional Valuer or
+            Professional Associate Valuer.
+        </li>
+    </ul>
+    <br>
+    <p><b>DUTIES AND RESPONSIBILITIES ARE AS FOLLOWS: </b></p>
+    <ul>
+        <li>Provide various support to the Council which includes secretariat support, interact on a regular basis with
+            the stakeholders which includes the Council for the Built Environment (CBE), and the Ministry of the
+            National Department of Public Works and Infrastructure (DPW&I); </li>
+        <li>Have the overall responsibility of running a smooth and efficient administration. Lead the Council staff,
+            provide organization-wide leadership, manage overall operations, the organization’s resources and expected
+            to make major decisions affecting the organization; </li>
+        <li>Responsible for Human Resources Management, Financial Management, Strategic Financial Planning/Organizing
+            Management, Meetings and recommending useful technological updates. Lead the development and implementation
+            of the organization’s strategic plan and operational policies;</li>
+        <li>Responsible for the organization's financial activity, by developing and implementing a budget including
+            overseeing budgeting, financial reports and auditing for Annual Financial Statements; </li>
+        <li>Manage records of all registered persons as well as other information required by all stakeholders. Compile
+            registration statistics and advise registered persons regarding their registration status, and be
+            responsible for collating professional development status requirements; </li>
+        <li>Attend to complaints from registered persons and members of the public and prepare and submit complaints to
+            Investigation Committee for review and appeal purposes; </li>
+        <li>Play a facilitative role to promote the valuation profession at the highest level; </li>
+        <li>Collaborate with universities and higher education institutions to coordinate accreditation meetings. Other
+            responsibilities include keeping records of all curricular prerequisites, determining registration’s
+            eligibility, planning professional development activities and preparing information such as eligibility
+            lists and registration status. </li>
+    </ul>
+    <p><b class="hyper" (click)="openRegistrarPDF()">For more information please click here. </b></p>
+
+</div>
+<br>
+<br>
+<mat-divider></mat-divider>
+<br>
+<br>
+<div class="section-title" data-aos="zoom-out" style="padding-top: 10px;">
+    <h4 style="font-size: 16px;text-align: center;">CITY OF uMHLATHUZE </h4>
+</div>
+<div style="margin-left: 20%;font-size: 14px;padding-right: 12%;">
+    <p><b>TENDER 8/2/1/UMH1244/22/23: BID TO PERFORM THE FUNCTIONS OF A MUNICIPAL VALUER FOR PREPARATION OF THE
+            GENERAL VALUATION ROLL AND MAINTENANCE & UPDATING OF VALUATION ROLLS FOR THE PERIOD OF FIVE YEARS IN THE
+            CITY OF uMHLATHUZE, FOR GENERAL VALUATION ROLL TO BE IMPLEMENTED ON 1 JULY 2025</b></p>
+    <br>
+    <p><b>Tenderers are hereby invited from suitably qualified suppliers for the following: </b></p>
+    <br>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table" data-aos="zoom-out">
+       
+        <ng-container matColumnDef="bidNo">
+            <th mat-header-cell *matHeaderCellDef> Bid Number </th>
+            <td mat-cell *matCellDef="let element"> {{element.bidNo}} </td>
+        </ng-container>
+
+     
+        <ng-container matColumnDef="bidDesc">
+            <th mat-header-cell *matHeaderCellDef> Bid Descriptions </th>
+            <td mat-cell *matCellDef="let element"> {{element.bidDesc}} </td>
+        </ng-container>
+
+       
+        <ng-container matColumnDef="fee">
+            <th mat-header-cell *matHeaderCellDef> No-Refundable Tender Fee </th>
+            <td mat-cell *matCellDef="let element"> {{element.fee}} </td>
+        </ng-container>
+
+    
+        <ng-container matColumnDef="point">
+            <th mat-header-cell *matHeaderCellDef> Preferential point system </th>
+            <td mat-cell *matCellDef="let element"> {{element.point}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="openDate">
+            <th mat-header-cell *matHeaderCellDef> Opening date for Bid Document collection </th>
+            <td mat-cell *matCellDef="let element"> {{element.openDate}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="briefDate">
+            <th mat-header-cell *matHeaderCellDef> Compulsory Briefing Session Date, Time and Venue </th>
+            <td mat-cell *matCellDef="let element"> {{element.briefDate}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="closeDate">
+            <th mat-header-cell *matHeaderCellDef> Bid Closing Date and time </th>
+            <td mat-cell *matCellDef="let element"> {{element.closeDate}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <br>
+    <p><b>Note:</b></p>
+    <p><b>Mandatory requirements for tenders:</b></p>
+    <ul>
+        <li>Prequalification Criteria: Only tenderers who are EME/QSE with BBBEE Level 1 are eligible to tender for
+            Tender No. 8/2/1/UMH1244/22/23 in terms of PPPFA Regulations Clause 4(1)(a) and (b) and Clause 4(2). </li>
+        <li>Valuation Roll Management System (VRMS) must be compatible with SAP system. Bidders must submit with the
+            tender, proof from any recognized SAP Agent. Failure to comply with this condition will invalidate the Bid.
+        </li>
+        <li>Only bidders with Municipal Valuer and an Assistant Municipal Valuer Complying with Section 39(1)(2) or
+            Municipal Property Rates Act No. 6 of 2004 and regulations (must be a person registered as a professional
+            valuer or professional associated in terms of the Property Valuers Profession Act, 2000 (Act No. 47 of
+            2000)) </li>
+        <li>Regulation 44 of the Supply Chain Management Regulations states that the Municipality may not make any award
+            to a person who is in the service of the state (government), and if that person is not a natural person, of
+            which any Director, Manager, Principal, Shareholder or Stakeholder is a person in the service of the state;
+            or who is an advisor or consultant contracted with the municipality or municipal entity. </li>
+        <li>All bids are subject to the terms and conditions contained herein and in the bid documentation as stipulated
+            by various legislations governing public procurement including City of uMhlathuze’s policies. </li>
+        <li>uMhlathuze Municipality does not bind itself to accept the lowest or any tender, and reserves the right to
+            accept any tender in whole or in part.</li>
+    </ul>
+    <br>
+    <p><b>Submission of bids:</b></p>
+    <ul>
+        <li>Sealed bids, <b>clearly endorsed:</b> Tender No. 8/2/1/UMH1244/22/23 must be placed in the Bid box at the
+            Stores and Procurement, Alton, Richards bay <b>before 12:00 noon on 24 July 2023.</b> </li>
+        <li>The Tenderers details and return address must be indicated on the back of the sealed envelope in which the
+            Tender is deposited, this is required for the purpose of returning tenders in cases where it may be
+            required. </li>
+        <li>Only tender documents purchased from the municipality will be considered for evaluation. </li>
+    </ul>
+    <br>
+    <p>Kindly be advised that the SACPVP will not be able to answer any query related to the advert. </p>
+    <p>Rather, use the email address stated in the advert below. </p>
+    <p><b class="hyper" (click)="openGovernmentTenderPDF()">Please click here for more information. </b></p>
+</div> -->
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer Starts -->
+<!-- ======= Footer ======= -->
+<app-footer></app-footer>
+<!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+    [style.visibility]="(bottomscrollarrow == false) ? 'hidden' : 'unset'"
+    [style.opacity]="(bottomscrollarrow == false) ? '0' : '1'"><i class="bi bi-arrow-up-short"></i></a>

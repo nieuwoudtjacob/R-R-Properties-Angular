@@ -1,0 +1,6 @@
+node_modules
+.angular/*
+.angular/cache/*
+Dashonic_Angular_V1.1.0/*
+node_modules/*
+dist

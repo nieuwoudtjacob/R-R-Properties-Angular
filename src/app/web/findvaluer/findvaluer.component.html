@@ -1,0 +1,339 @@
+<!-- Header Starts  -->
+<header id="header" class="fixed-top d-flex align-items-center  header-transparent"
+    [style.background-color]="(top == false) ? 'rgb(31 110 212 / 95%)' : 'transparent'">
+    <div class="container d-flex align-items-center justify-content-between" style="max-width: 90%;">
+        <a href="index.html" style="margin-right: 20px;"><img src="assets/Images/PV4PLogo.PNG" alt="" class="img-fluid"
+                style="width: 60px;"></a>
+        <div class="logo">
+
+            <h1><a href="index.html">South African Council for the Property Valuers Profession</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li class="dropdown "><a class="nav-link scrollto " href="#hero"
+                        (click)="goToContruction(false)"><span>Home</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a class="nav-link scrollto" href="#about" (click)="goToContruction(false)">About</a>
+                        </li>
+                        <li><a class="nav-link scrollto" href="#services" (click)="goToContruction(false)">Services</a>
+                        </li>
+                        <li><a class="nav-link scrollto " href="#portfolio"
+                                (click)="goToContruction(false)">Portfolio</a></li>
+                        <li><a class="nav-link scrollto" href="#faq" (click)="goToContruction(false)">FAQ</a></li>
+                        <li><a class="nav-link scrollto" href="#team" (click)="goToContruction(false)">Team</a></li>
+                        <li><a class="nav-link scrollto" href="#contact" (click)="goToContruction(false)">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="announcements">Announcements</a></li>
+                <li><a href="examinations">Examinations</a></li>
+
+                <li class="dropdown"><a href="events"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="notice">Notice</a></li>
+
+                        <li><a href="gallery">Gallery</a></li>
+
+                        <li class="dropdown"><a href=""><span>Conferences,
+                                    Workshops &
+                                    Seminars</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="practicalworkschool">Practical Workschool</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="TendersAndJobs">Tenders/Jobs</a></li>
+
+
+                <li class="dropdown"><a href="registrations"><span>Registrations</span> <i
+                            class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="HowToRegister">How to register</a></li>
+                        <li><a href="AccreditedProgrammes">
+                                Accredited Programmes</a></li>
+                        <li><a href="E-Log">e-Log Maintain Work Record</a></li>
+                        <li><a href="CET">
+                                CPD Activities and Allocation</a></li>
+                        <li><a href="RestrictionCodes">Restriction Codes</a></li>
+                        <li><a href="Learnership">
+                                Learnership</a></li>
+
+                    </ul>
+                </li>
+
+
+
+                <li><a href="ProfessionalFees">Professional Fees</a></li>
+
+
+
+                <li class="dropdown"><a href="standards"><span>Standards</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="MunicipalRatingStandards">
+                                Municipal Rating Standards</a></li>
+                        <li><a href="InternationalValuationStandards">
+                                International Valuation Standards</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown"><a href="LodgeALegalCaseOrComplaint"><span>Legal</span> <i
+                            class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="governance">Governance</a></li>
+                        <!-- <li><a href="">Lodge a legal case</a></li>
+                        <li class="dropdown"><a href=""><span>Code of conduct</span> <i
+                                    class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="LodgeALegalCaseOrComplaint">Lodge a legal case or
+                                        complaint</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </li>
+
+                <li class="dropdown"><a href="FindValuer" class="active"><span>Find Valuer</span></a>
+                    <!-- <ul>
+                    <li><a href="#" (click)="goToContruction(true)">
+                            Name search</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">Search by Council Number</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">
+                            Search by Category</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">Member Search</a></li>
+                </ul> -->
+                </li>
+
+
+
+
+
+
+
+                <li><a class="nav-link scrollto" (click)="toApp()" href="">Log In</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+    </div>
+</header>
+
+
+
+
+<!-- Content Starts -->
+<div class="section-title" data-aos="zoom-out" style="padding-top: 100px;padding-left: 10px;">
+    <h2 style="font-size: 20px;">Find Valuer</h2>
+</div>
+
+
+<mat-tab-group style="margin-left: 10%;margin-right: 10%;">
+    <mat-tab label="Name Search">
+        <br>
+        <br>
+        <div style="margin-bottom: 15%;font-size: 14px;">
+            <div class="section-title" data-aos="zoom-out" style="padding-top: 10px;padding-bottom: 0px;">
+                <h4 style="font-size: 16px;text-align: center;">Name Search</h4>
+            </div>
+            <br>
+            <p data-aos="zoom-out"><b>Please enter Name or Surname to search for:</b></p>
+            <form style="max-width: 50%;" data-aos="zoom-out">
+
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input style="font-size: 14px;" type="text" class="form-control" id="Name" aria-describedby="Name"
+                        placeholder="Type here...">
+
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="Surname">Surname</label>
+                    <input style="font-size: 14px;" type="text" class="form-control" id="Surname "
+                        aria-describedby="Surname" placeholder="Type here...">
+
+                </div>
+                <br>
+                <div style=" padding: 12px 0px;">
+                    <button style="width: 30%;" type="submit" class="custom-btn btn-f animation a6"><span>Search
+                        </span></button>
+                </div>
+            </form>
+        </div>
+
+    </mat-tab>
+    <mat-tab label="Search by Category">
+        <br>
+        <br>
+        <div style="margin-bottom: 19%;font-size: 14px;">
+            <div class="section-title" data-aos="zoom-out" style="padding-top: 10px;padding-bottom: 0px;">
+                <h4 style="font-size: 16px;text-align: center;">Search by Category</h4>
+            </div>
+            <br>
+            <p data-aos="zoom-out"><b>Select the registration category to generate your result:</b></p>
+            <p></p>
+            <mat-form-field style="min-width: 60%;" data-aos="zoom-out">
+                <mat-label style="font-size: 16px;">Choose Categories</mat-label>
+                <mat-select [(value)]="selectedCategories" (selectionChange)="viewChange()" style="font-size: 16px;"
+                    multiple>
+                    <mat-option value="option1" style="font-size: 14px;">Application for Registration</mat-option>
+                    <mat-option value="option2" style="font-size: 14px;">Candidate Valuer</mat-option>
+                    <mat-option value="option3" style="font-size: 14px;">Professional Associated Valuer</mat-option>
+                    <mat-option value="option4" style="font-size: 14px;">Professional Valuer</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <br>
+            <div style=" padding: 12px 0px;" data-aos="zoom-out">
+                <button style="width: 20%;" type="submit" class="custom-btn btn-f animation a6"><span>Search
+                    </span></button>
+            </div>
+        </div>
+
+
+    </mat-tab>
+    <mat-tab label="Search By Council Number">
+
+        <br>
+        <br>
+        <div style="margin-bottom: 19%;font-size: 14px;">
+            <div class="section-title" data-aos="zoom-out" style="padding-top: 10px;padding-bottom: 0px;">
+                <h4 style="font-size: 16px;text-align: center;">Search By Council Number</h4>
+            </div>
+            <br>
+            <p data-aos="zoom-out"><b>Please enter the current active Council Registration Number in the space
+                    below:</b>
+            </p>
+
+            <form style="max-width: 50%;" data-aos="zoom-out">
+
+                <div class="form-group">
+                    <label for="registrationNumber">Current Active Registration Number</label>
+                    <input style="font-size: 14px;" type="text" class="form-control" id="registrationNumber"
+                        aria-describedby="registrationNumber" placeholder="Type here...">
+
+                </div>
+
+                <br>
+                <div style=" padding: 12px 0px;">
+                    <button style="width: 30%;" type="submit" class="custom-btn btn-f animation a6"><span>Search
+                        </span></button>
+                </div>
+            </form>
+        </div>
+
+
+
+    </mat-tab>
+    <mat-tab label="Member Search">
+        <br>
+        <br>
+        <mat-tab-group>
+
+            <mat-tab label="Basic Search"><br><br>
+                <div style="font-size: 14px;padding-bottom: 8%;">
+                    <div class="section-title" data-aos="zoom-out" style="padding-top: 10px;padding-bottom: 0px;">
+                        <h4 style="font-size: 16px;text-align: center;">Basic Search</h4>
+                    </div>
+                    <br>
+                    <p><b>Please enter your query below. You may search the directory for keywords and filter by the
+                            additional criteria provided as well. To search within specific profile fields use the
+                            advanced
+                            search. </b></p>
+                    <p><b>Example</b>: Searching for “smith” will retrieve anyone with “smith” in their profile,
+                        including
+                        those with the name of Smith. </p>
+                    <br>
+                    <form style="max-width: 50%;" data-aos="zoom-out">
+
+                        <div class="form-group">
+                            <label for="Search">Search</label>
+                            <input style="font-size: 14px;" type="text" class="form-control" id="Search"
+                                aria-describedby="Search" placeholder="Type here...">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="Surname">Surname</label>
+                            <input style="font-size: 14px;" type="text" class="form-control" id="Surname "
+                                aria-describedby="Surname" placeholder="Type here...">
+                        </div>
+                        <br>
+                        <div style=" padding: 12px 0px;">
+                            <button style="width: 30%;" type="submit" class="custom-btn btn-f animation a6"><span>Search
+                                </span></button>
+                        </div>
+                    </form>
+                </div>
+            </mat-tab>
+
+            <mat-tab label="Advanced Search">
+                <br>
+                <br>
+                <div style="font-size: 14px;padding-bottom: 8%;">
+                    <div class="section-title" data-aos="zoom-out" style="padding-top: 10px;padding-bottom: 0px;">
+                        <h4 style="font-size: 16px;text-align: center;">Basic Search</h4>
+                    </div>
+                    <br>
+                    <p><b>Please select from the member types and status options available below. Click "continue" to
+                            view all available search criteria based on your selection.</b></p>
+
+                    <br>
+                    <mat-form-field style="min-width: 30%;" data-aos="zoom-out">
+                        <mat-label style="font-size: 16px;">Member Status</mat-label>
+                        <mat-select [(value)]="selectedCategories2" (selectionChange)="viewChange()"
+                            style="font-size: 16px;">
+                            <mat-option value="option1" style="font-size: 14px;">Active</mat-option>
+                            <mat-option value="option2" style="font-size: 14px;">Disabled</mat-option>
+                            <mat-option value="option3" style="font-size: 14px;">Pending</mat-option>
+                            <mat-option value="option4" style="font-size: 14px;">Cancelled</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field style="min-width: 90%;" data-aos="zoom-out">
+                        <mat-label style="font-size: 16px;">Member Type</mat-label>
+                        <mat-select [(value)]="selectedCategories3" (selectionChange)="viewChange()" multiple
+                            style="font-size: 16px;">
+                            <mat-option value="option1" style="font-size: 14px;">Application for
+                                Registration</mat-option>
+                            <mat-option value="option2" style="font-size: 14px;">Candidate Valuer</mat-option>
+                            <mat-option value="option3" style="font-size: 14px;">Professional Valuer</mat-option>
+                            <mat-option value="option4" style="font-size: 14px;">Professional Associated
+                                Valuer</mat-option>
+                            <mat-option value="option5" style="font-size: 14px;">Candidate Single Residential Property
+                                Assessor</mat-option>
+                            <mat-option value="option6" style="font-size: 14px;">Single Residential Property
+                                Assessor</mat-option>
+                            <mat-option value="option7" style="font-size: 14px;">Voluntary Association</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+
+
+                    <div style=" padding: 12px 0px;">
+                        <button style="width: 30%;" type="submit" class="custom-btn btn-f animation a6"><span>Search
+                            </span></button>
+                    </div>
+                </div>
+
+
+            </mat-tab>
+
+
+        </mat-tab-group>
+    </mat-tab>
+</mat-tab-group>
+
+
+
+
+<!-- Footer Starts -->
+<app-footer style="margin-top: 0% !important;
+display: block;"></app-footer>
+<!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+    [style.visibility]="(bottomscrollarrow == false) ? 'hidden' : 'unset'"
+    [style.opacity]="(bottomscrollarrow == false) ? '0' : '1'"><i class="bi bi-arrow-up-short"></i></a>

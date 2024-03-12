@@ -1,0 +1,772 @@
+<!-- Header Nav -->
+
+<header id="header" class="fixed-top d-flex align-items-center  header-transparent"
+    [style.background-color]="(top == false) ? 'rgb(31 110 212 / 95%)' : 'transparent'">
+    <div class="container d-flex align-items-center justify-content-between" style="max-width: 90%;">
+        <a href="index.html" style="margin-right: 20px;"><img src="assets/Images/PV4PLogo.PNG" alt="" class="img-fluid"
+                style="width: 60px;"></a>
+        <div class="logo">
+
+            <h1><a href="index.html">South African Council for the Property Valuers Profession</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li class="dropdown "><a class="nav-link scrollto " href="#hero"
+                        (click)="goToContruction(false)"><span>Home</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a class="nav-link scrollto" href="#about" (click)="goToContruction(false)">About</a>
+                        </li>
+                        <li><a class="nav-link scrollto" href="#services" (click)="goToContruction(false)">Services</a>
+                        </li>
+                        <li><a class="nav-link scrollto " href="#portfolio"
+                                (click)="goToContruction(false)">Portfolio</a></li>
+                        <li><a class="nav-link scrollto" href="#faq" (click)="goToContruction(false)">FAQ</a></li>
+                        <li><a class="nav-link scrollto" href="#team" (click)="goToContruction(false)">Team</a></li>
+                        <li><a class="nav-link scrollto" href="#contact" (click)="goToContruction(false)">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="announcements">Announcements</a></li>
+                <li><a href="examinations">Examinations</a></li>
+
+                <li class="dropdown"><a href="events" class="active"><span>Events</span> <i
+                            class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="notice">Notice</a></li>
+
+                        <li><a href="gallery" class="active">Gallery</a></li>
+
+                        <li class="dropdown"><a href=""><span>Conferences,
+                                    Workshops &
+                                    Seminars</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="practicalworkschool">Practical Workschool</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="TendersAndJobs">Tenders/Jobs</a></li>
+
+
+                <li class="dropdown"><a href="registrations"><span>Registrations</span> <i
+                            class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="HowToRegister">How to register</a></li>
+                        <li><a href="AccreditedProgrammes">
+                                Accredited Programmes</a></li>
+                        <li><a href="E-Log">e-Log Maintain Work Record</a></li>
+                        <li><a href="CET">
+                                CPD Activities and Allocation</a></li>
+                        <li><a href="RestrictionCodes">Restriction Codes</a></li>
+                        <li><a href="Learnership">
+                                Learnership</a></li>
+
+                    </ul>
+                </li>
+
+
+
+                <li><a href="ProfessionalFees">Professional Fees</a></li>
+
+
+
+                <li class="dropdown"><a href="standards"><span>Standards</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="MunicipalRatingStandards">
+                                Municipal Rating Standards</a></li>
+                        <li><a href="InternationalValuationStandards">
+                                International Valuation Standards</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown"><a href="LodgeALegalCaseOrComplaint"><span>Legal</span> <i
+                            class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="governance">Governance</a></li>
+                        <!-- <li><a href="">Lodge a legal case</a></li>
+                        <li class="dropdown"><a href=""><span>Code of conduct</span> <i
+                                    class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="LodgeALegalCaseOrComplaint">Lodge a legal case or
+                                        complaint</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </li>
+
+                <li class="dropdown"><a href="FindValuer"><span>Find Valuer</span></a>
+                    <!-- <ul>
+                    <li><a href="#" (click)="goToContruction(true)">
+                            Name search</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">Search by Council Number</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">
+                            Search by Category</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">Member Search</a></li>
+                </ul> -->
+                </li>
+
+
+
+
+
+
+
+                <li><a class="nav-link scrollto" (click)="toApp()" href="">Log In</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+    </div>
+</header>
+
+
+
+
+
+<!-- End Header -->
+
+
+<!-- Page content -->
+
+<div class="section-title" data-aos="zoom-out" style="padding-top: 100px;padding-left: 10px;">
+    <h2 style="font-size: 20px;">Gallery</h2>
+</div>
+
+<div class="section-title" data-aos="zoom-out" style="padding-top: 20px;padding-left: 10px;">
+    <h2 style="font-size: 14px;">2016</h2>
+</div>
+
+
+<!-- Section One -->
+
+<mat-grid-list cols="12" rowHeight="2:1">
+    <mat-grid-tile>
+
+        <div style="padding-left: 20px;">
+            <img style="width: 70px;margin-left: 20px;" *ngIf="folder2016Practical == false" (click)="folder2016Click()"
+                src="../../../assets/svg/folder-svgrepo-com.svg">
+
+            <img *ngIf="folder2016Practical" style="width: 70px;margin-left: 20px;" (click)="folder2016Click()"
+                src="../../../assets/svg/gui-folder-open-svgrepo-com.svg">
+            <p>2016 Practical Workschool</p>
+        </div>
+
+
+
+
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div style="margin-left: 20px;">
+            <img style="width: 70px;margin-left: 20px;" *ngIf="folder2016Conference == false"
+                (click)="folder2016Click2()" src="../../../assets/svg/folder-svgrepo-com.svg">
+
+            <img *ngIf="folder2016Conference" style="width: 70px;margin-left: 20px;" (click)="folder2016Click2()"
+                src="../../../assets/svg/gui-folder-open-svgrepo-com.svg">
+            <p>2016 AFRES Conference</p>
+        </div>
+    </mat-grid-tile>
+
+</mat-grid-list>
+
+
+
+
+
+
+<div class="section-title" *ngIf="folder2016Practical" data-aos="zoom-out"
+    style="padding-top: 20px;padding-left: 10px;">
+    <h2 style="font-size: 14px;">2016 Practical Workschool</h2>
+</div>
+<div *ngIf="folder2016Practical">
+
+    <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide">
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-2/IMG_20160822_104326.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 Practical Workschool.</p>">
+
+            <img [hidden]="!imageLoader1" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader1" src="assets/SACPVP Gallery/2016-2/IMG_20160822_104326.jpg"
+                (load)="this.imageLoader1 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-2/IMG_20160822_104326.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+
+
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-2/IMG_20160822_104401.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 Practical Workschool.</p>">
+
+            <img [hidden]="!imageLoader2" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader2" src="assets/SACPVP Gallery/2016-2/IMG_20160822_104401.jpg"
+                (load)="this.imageLoader2 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-2/IMG_20160822_104401.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-2/IMG_20160822_154256.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 Practical Workschool.</p>">
+
+            <img [hidden]="!imageLoader3" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader3" src="assets/SACPVP Gallery/2016-2/IMG_20160822_154256.jpg"
+                (load)="this.imageLoader3 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-2/IMG_20160822_154256.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-2/IMG_20160822_154334.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 Practical Workschool.</p>">
+
+
+            <img [hidden]="!imageLoader4" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader4" src="assets/SACPVP Gallery/2016-2/IMG_20160822_154334.jpg"
+                (load)="this.imageLoader4 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-2/IMG_20160822_154334.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-2/IMG_20160822_154413.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 Practical Workschool.</p>">
+
+            <img [hidden]="!imageLoader5" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader5" src="assets/SACPVP Gallery/2016-2/IMG_20160822_154413.jpg"
+                (load)="this.imageLoader5 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-2/IMG_20160822_154413.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-2/IMG_20160825_103444.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 Practical Workschool.</p>">
+
+
+            <img [hidden]="!imageLoader6" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader6" src="assets/SACPVP Gallery/2016-2/IMG_20160825_103444.jpg"
+                (load)="this.imageLoader6 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-2/IMG_20160825_103444.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-2/IMG_20160825_111230.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 Practical Workschool.</p>">
+
+
+            <img [hidden]="!imageLoader7" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader7" src="assets/SACPVP Gallery/2016-2/IMG_20160825_111230.jpg"
+                (load)="this.imageLoader7 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-2/IMG_20160825_111230.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-2/IMG_20160825_111245.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 Practical Workschool.</p>">
+
+
+            <img [hidden]="!imageLoader8" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader8" src="assets/SACPVP Gallery/2016-2/IMG_20160825_111245.jpg"
+                (load)="this.imageLoader8 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-2/IMG_20160825_111245.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-2/IMG_20160825_111249.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 Practical Workschool.</p>">
+
+
+
+            <img [hidden]="!imageLoader9" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader9" src="assets/SACPVP Gallery/2016-2/IMG_20160825_111249.jpg"
+                (load)="this.imageLoader9 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-2/IMG_20160825_111249.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-2/IMG_20160825_111332.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 Practical Workschool.</p>">
+
+
+            <img [hidden]="!imageLoader10" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader10" src="assets/SACPVP Gallery/2016-2/IMG_20160825_111332.jpg"
+                (load)="this.imageLoader10 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-2/IMG_20160825_111332.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-2/IMG_20160825_120043.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 Practical Workschool.</p>">
+
+
+            <img [hidden]="!imageLoader11" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader11" src="assets/SACPVP Gallery/2016-2/IMG_20160825_120043.jpg"
+                (load)="this.imageLoader11 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-2/IMG_20160825_120043.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-2/IMG_20160825_120207.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 Practical Workschool.</p>">
+
+
+            <img [hidden]="!imageLoader12" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader12" src="assets/SACPVP Gallery/2016-2/IMG_20160825_120207.jpg"
+                (load)="this.imageLoader12 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-2/IMG_20160825_120207.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-2/IMG_20160825_120747.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 Practical Workschool.</p>">
+
+
+            <img [hidden]="!imageLoader13" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader13" src="assets/SACPVP Gallery/2016-2/IMG_20160825_120747.jpg"
+                (load)="this.imageLoader13 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-2/IMG_20160825_120747.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-2/IMG_20160825_155809.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 Practical Workschool.</p>">
+
+            <img [hidden]="!imageLoader14" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader14" src="assets/SACPVP Gallery/2016-2/IMG_20160825_155809.jpg"
+                (load)="this.imageLoader14 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-2/IMG_20160825_155809.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-2/IMG_20160826_121814.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 Practical Workschool.</p>">
+
+            <img [hidden]="!imageLoader15" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader15" src="assets/SACPVP Gallery/2016-2/IMG_20160826_121814.jpg"
+                (load)="this.imageLoader15 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-2/IMG_20160826_121814.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+    </lightgallery>
+
+
+
+</div>
+
+
+
+<!-- Section Two -->
+<br>
+<br>
+<div class="section-title" *ngIf="folder2016Conference" data-aos="zoom-out"
+    style="padding-top: 20px;padding-left: 10px;">
+    <h2 style="font-size: 14px;">2016 AFRES Conference</h2>
+</div>
+
+<div *ngIf="folder2016Conference">
+    <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide">
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-1/20160908_132434.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 AFRES Conference</p>">
+
+            <img [hidden]="!imageLoader16" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader16" src="assets/SACPVP Gallery/2016-1/20160908_132434.jpg"
+                (load)="this.imageLoader16 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-1/20160908_132434.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-1/20160908_171100.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 AFRES Conference</p>">
+
+
+            <img [hidden]="!imageLoader17" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader17" src="assets/SACPVP Gallery/2016-1/20160908_171100.jpg"
+                (load)="this.imageLoader17 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-1/20160908_171100.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-1/20160908_204835.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 AFRES Conference</p>">
+
+
+            <img [hidden]="!imageLoader18" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader18" src="assets/SACPVP Gallery/2016-1/20160908_204835.jpg"
+                (load)="this.imageLoader18 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-1/20160908_204835.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-1/20160909_114857.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 AFRES Conference</p>">
+
+
+            <img [hidden]="!imageLoader20" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader20" src="assets/SACPVP Gallery/2016-1/20160909_114857.jpg"
+                (load)="this.imageLoader20 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-1/20160909_114857.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-1/20160909_123015.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 AFRES Conference</p>">
+
+            <img [hidden]="!imageLoader21" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader21" src="assets/SACPVP Gallery/2016-1/20160909_123015.jpg"
+                (load)="this.imageLoader21 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-1/20160909_123015.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/2016-1/20160909_135341-1.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2016 AFRES Conference</p>">
+
+
+            <img [hidden]="!imageLoader22" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader22" src="assets/SACPVP Gallery/2016-1/20160909_135341-1.jpg"
+                (load)="this.imageLoader22 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/2016-1/20160909_135341-1.jpg"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+    </lightgallery>
+
+</div>
+<!-- Section Three -->
+<br>
+<br>
+
+<div class="section-title" data-aos="zoom-out" style="padding-top: 20px;padding-left: 10px;">
+    <h2 style="font-size: 14px;">2019</h2>
+</div>
+
+<div style="margin-left: 20px;">
+    <img style="width: 70px;margin-left: 20px;" *ngIf="folder2019Practical == false" (click)="folder2019Click3()"
+        src="../../../assets/svg/folder-svgrepo-com.svg">
+
+    <img *ngIf="folder2019Practical" style="width: 70px;margin-left: 20px;" (click)="folder2019Click3()"
+        src="../../../assets/svg/gui-folder-open-svgrepo-com.svg">
+    <p>2019 Practical Workschool</p>
+</div>
+<div *ngIf="folder2019Practical" class="section-title" data-aos="zoom-out"
+    style="padding-top: 20px;padding-left: 10px;">
+    <h2 style="font-size: 14px;">2019 Practical Workschool </h2>
+</div>
+
+<div *ngIf="folder2019Practical">
+    <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide">
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/20190820_131947.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2019 Practical Workschool</p>">
+
+
+            <img [hidden]="!imageLoader23" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader23" src="assets/SACPVP Gallery/20190820_131947.jpg"
+                (load)="this.imageLoader23 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/20190820_131947.jpg" loading="lazy"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/20190820_151019.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2019 Practical Workschool</p>">
+
+
+            <img [hidden]="!imageLoader24" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader24" src="assets/SACPVP Gallery/20190820_151019.jpg"
+                (load)="this.imageLoader24 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/20190820_151019.jpg" loading="lazy"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/20190820_151350.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2019 Practical Workschool</p>">
+
+            <img [hidden]="!imageLoader25" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader25" src="assets/SACPVP Gallery/20190820_151350.jpg"
+                (load)="this.imageLoader25 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/20190820_151350.jpg" loading="lazy"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/20190820_151451.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2019 Practical Workschool</p>">
+
+
+
+            <img [hidden]="!imageLoader26" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader26" src="assets/SACPVP Gallery/20190820_151451.jpg"
+                (load)="this.imageLoader26 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/20190820_151451.jpg" loading="lazy"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/20190820_151739.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2019 Practical Workschool</p>">
+
+
+            <img [hidden]="!imageLoader27" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader27" src="assets/SACPVP Gallery/20190820_151739.jpg"
+                (load)="this.imageLoader27 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/20190820_151739.jpg" loading="lazy"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/20190820_181137.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2019 Practical Workschool</p>">
+
+
+
+            <img [hidden]="!imageLoader28" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader28" src="assets/SACPVP Gallery/20190820_181137.jpg"
+                (load)="this.imageLoader28 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/20190820_181137.jpg" loading="lazy"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/20190820_201856.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2019 Practical Workschool</p>">
+
+
+
+            <img [hidden]="!imageLoader29" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader29" src="assets/SACPVP Gallery/20190820_201856.jpg"
+                (load)="this.imageLoader29 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+            <!-- 
+            <img class="img-responsive" src="assets/SACPVP Gallery/20190820_201856.jpg" loading="lazy"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/20190823_115957.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2019 Practical Workschool</p>">
+
+            <img [hidden]="!imageLoader30" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader30" src="assets/SACPVP Gallery/20190823_115957.jpg"
+                (load)="this.imageLoader30 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/20190823_115957.jpg" loading="lazy"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/20190823_120037.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2019 Practical Workschool</p>">
+
+
+            <img [hidden]="!imageLoader31" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader31" src="assets/SACPVP Gallery/20190823_120037.jpg"
+                (load)="this.imageLoader31 = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+
+
+            <!-- <img class="img-responsive" src="assets/SACPVP Gallery/20190823_120037.jpg" loading="lazy"
+                style="width: 240px;padding: 10px;height: 185px;" style="width: 240px;padding: 10px;height: 185px;" /> -->
+        </a>
+
+        <a data-lg-size="480-480-480, 800-800-800, 1400-1400" data-pinterest-text="Pin it3"
+            data-tweet-text="share on twitter 4" class="gallery-item"
+            data-src="assets/SACPVP Gallery/20190823_120117.jpg"
+            data-sub-html="<h4>Photo by - <a href='https://www.sacpvp.co.za' >SACPVP </a></h4><p> 2019 Practical Workschool</p>">
+
+
+
+            <img [hidden]="!imageLoader" class="img-responsive" style="width: 148px;padding: 10px;height: 185px;"
+                src="../../../assets/svg/loading-9414_512.gif" />
+            <img [hidden]="imageLoader" src="assets/SACPVP Gallery/20190823_120117.jpg"
+                (load)="this.imageLoader = false;" class="img-responsive"
+                style="width: 240px;padding: 10px;height: 185px;" />
+        </a>
+
+    </lightgallery>
+</div>
+
+<!-- Footer Section -->
+<app-footer style="margin-top: 5% !important;
+display: block;"></app-footer>
+<!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+    [style.visibility]="(bottomscrollarrow == false) ? 'hidden' : 'unset'"
+    [style.opacity]="(bottomscrollarrow == false) ? '0' : '1'"><i class="bi bi-arrow-up-short"></i></a>

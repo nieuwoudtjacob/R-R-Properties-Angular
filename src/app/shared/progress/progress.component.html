@@ -1,0 +1,9 @@
+<div class="progress-cont" *ngIf="loading">
+    <div class="progress" [style.width]="progress + '%'">
+    </div>
+</div>
+
+<div class="progress-cont" *ngIf="!loading">
+    <div class="progressLoading" [style.width]="progress + '%'">
+    </div>
+</div>

@@ -1,0 +1,87 @@
+<body>
+    <div class="containerApp">
+        <header class="header" style="background-color: #151539;">
+            <img src="../assets/Images/logo.png" alt="" class="logo">
+            <!-- <h3 class="headertext">{{'Member Reg No: '+ user.Registration_No }}</h3>
+            <h3 class="headertext">{{'Customer No: '+ user.Customer_No }}</h3>
+            <h3 class="headertext">{{'Email: '+ user.Email }}</h3>
+            <h3 class="headertext">{{'CPD-Points: Work in progress' }}</h3> -->
+            <nav class="user-nav">
+
+                <div class="user-nav__user">
+
+
+                    <span class="user-nav__user-name" style="color: rgb(255, 255, 255);">
+                        {{user.Username}}
+                    </span>
+
+                    <img src="../assets/Images/blank-profile-picture-973461_1280.png" alt="User photo"
+                        class="user-nav__user-photo">
+
+                    <button mat-icon-button [matMenuTriggerFor]="menu">
+                        <img style="margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 60%;" src="../../../assets/svg/more-svgrepo-com.svg">
+                    </button>
+                    <mat-menu #menu="matMenu" style="overflow: hidden;">
+                        <button mat-menu-item class="matMenu" (click)="logOut()" style="text-align: center;"><img
+                                src="../../../assets/Images/exit.svg" style="    position: absolute;
+                                width: 20px;
+                                left: 7%;">
+                            <p style="padding-left: 20px;">Log Out</p>
+                        </button>
+                    </mat-menu>
+
+                </div>
+            </nav>
+        </header>
+
+        <div class="containerApp" style="padding-top: 70px;padding-left: 2px;">
+
+            <nav>
+                <ul class="mcd-menu"
+                    style="min-height: 94%;position: fixed; box-shadow: -4px -4px 20px 0px #929292;background-color: #151539;">
+                    <!-- <li>
+                        <a [routerLink]="['/web-app', {outlets: {'appcontent': ['app-home']}}]"
+                            routerLinkActive="active">
+                            <i><img src="../../../assets/Images/home.svg" style="width: 30px;"></i>
+                            <strong style="font-size: 16px;">Home</strong>
+                            <small>sweet home</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/web-app', {outlets: {'appcontent': ['statement']}}]"
+                            routerLinkActive="active">
+                            <i><img src="../../../assets/Images/statement-real.svg" style="width: 30px;"></i>
+                            <strong style="font-size: 16px;">Statement</strong>
+                            <small>view statement</small>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a [routerLink]="['/web-app', {outlets: {'appcontent': ['properties']}}]"
+                            routerLinkActive="active">
+                            <i><img src="../../../assets/Images/home-1-svgrepo-com.svg" style="width: 30px;"></i>
+                            <strong style="font-size: 16px;">Properties</strong>
+                            <small>View my properties</small>
+                        </a>
+                    </li>
+                    <div class="legal" style="position: absolute;bottom: 4%;">
+                        &copy; 2024 by R&R Real Estate. All rights reserved.
+                    </div>
+                    <li class="float" style="position: absolute;bottom: 0;">
+                        <!-- <a class="search">
+                            <input type="text" placeholder="search ...">
+                            <button><i class="fa fa-search"></i></button>
+                        </a> -->
+                        <!-- <a href="#" class="search-mobile">
+                            <i class="fa fa-search"></i>
+                        </a> -->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="contentcontainer">
+        <router-outlet name="appcontent"></router-outlet>
+    </div>
+</body>

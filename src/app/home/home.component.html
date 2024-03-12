@@ -1,0 +1,24 @@
+<mat-card class="matCard" style="margin: 20px;
+   min-height: 50vw;
+    min-width: 80vw;
+position: unset !important;    box-shadow: 6px 4px 20px 0px #929292;">
+    <mat-card-content>
+
+        <div [routerLink]="['/web-app', {outlets: {'appcontent': ['statement']}}]" class="iconhover"
+            style="position: absolute;margin-top: 20px;">
+            <!-- <lord-icon src="https://cdn.lordicon.com/ckatldkn.json" colors="primary:#4bb3fd" trigger="loop">
+            </lord-icon> -->
+            <img src="../../assets/Images/statement-real.svg" style="width: 6vw">
+            <h2 style="font-size: 0.7vw;margin-left: 5px;">View Statement</h2>
+        </div>
+
+        <div [routerLink]="['/web-app', {outlets: {'appcontent': ['cet-upload']}}]" class="iconhover"
+            style="margin-left: 9vw;margin-top: 20px;padding-left: 15px;">
+            <!-- <lord-icon src="https://cdn.lordicon.com/vaxqmgtw.json" colors="primary:#4bb3fd" trigger="loop">
+            </lord-icon> -->
+            <img src="../../assets/Images/Upload-real.svg" style="width: 6vw">
+            <h2 style="text-align: center;font-size: 0.7vw;    max-width: 88px;">CPD Upload</h2>
+        </div>
+
+    </mat-card-content>
+</mat-card>

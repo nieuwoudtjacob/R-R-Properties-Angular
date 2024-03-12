@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Code By Webdevtrick ( https://webdevtrick.com/animated-login-page-html-css/) -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <div class="containerLogin">
+
+        <div class="left-section">
+            <img class="animation a1 image" src="assets/Images/logo.png">
+            <div class="header">
+
+                <h1 class="animation a1">Welcome Back!</h1>
+                <h4 class="animation a2" style="color: white;">Please enter your credentials below.</h4>
+            </div>
+            <div class="form">
+                <input type="email" [(ngModel)]="UserName" class="form-field animation a3" placeholder="Username">
+                <input type="password" [(ngModel)]="Password" class="form-field animation a4" placeholder="Password">
+
+
+                <div style=" padding: 12px 0px;">
+                    <button class="custom-btn btn-f animation a5" (click)="Submit()"><span>LOGIN</span></button>
+                </div>
+                <!-- <div style=" padding: 12px 0px;">
+                    <button class="custom-btn btn-f animation a6" hr><span>WEBSITE</span></button>
+                </div> -->
+
+
+            </div>
+        </div>
+        <div class="right-section"></div>
+    </div>
+
+</body>
+
+</html>

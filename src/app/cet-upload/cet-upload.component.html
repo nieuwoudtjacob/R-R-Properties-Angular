@@ -1,0 +1,175 @@
+<div style=" padding: 12px 0px;">
+    <button class="custom-btn btn-f animation a5" (click)="back()"><span>Back To Property List</span></button>
+</div>
+<mat-tab-group #tabGroup (selectedTabChange)="tabChanged($event)" animationDuration="1000ms">
+
+    <mat-tab label="Property Details">
+        <div style="min-width: 80vw;    margin-left: 20px;">
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+
+            <div style="font-size: 14px;">
+                <p>Address: {{property.Address}}</p>
+                <br>
+                <p>City: {{property.City}}</p>
+                <br>
+                <p>Suburb: {{property.Suburb}}</p>
+                <br>
+                <p>Type: {{property.Type}}</p>
+                <br>
+                <p>Selling Price: {{property.Selling_Price}}</p>
+                <br>
+                <p>Date Of Sale: {{property.Date_Of_Sale}}</p>
+                <br>
+                <p>Date Of Transfer: {{property.Date_Of_Transfer}}</p>
+                <br>
+                <p>Commission Incl Vat: {{property.Commission_Incl_Vat}}</p>
+                <br>
+                <p>Commission On Deal: {{property.Commission_On_Deal}}</p>
+                <br>
+                <p>Commission Perc N On Deal: {{property.Commission_Perc_N_On_Deal}}</p>
+                <br>
+                <p>Commission Perc On Deal: {{property.Commission_Perc_On_Deal}}</p>
+                <br>
+                <p>Commission Vat: {{property.Commission_Vat}}</p>
+                <br>
+                <p>Date Comission Payment: {{property.Date_Comission_Payment}}</p>
+                <br>
+                <p>Mandate Listing Perc: {{property.Mandate_Listing_Perc}}</p>
+                <br>
+                <p>Mandate Other Perc: {{property.Mandate_Other_Perc}}</p>
+                <br>
+                <p>Mandate Selling Perc: {{property.Mandate_Selling_Perc}}</p>
+                <br>
+                <p>Sum Agent Total: {{property.Sum_Agent_Total}}</p>
+                <br>
+                <p>Sum Company Total: {{property.Sum_Company_Total}}</p>
+                <br>
+                <p>Total Amount To Agents: {{property.Total_Amount_To_Agents}}</p>
+                <br>
+                <p>Total Amount To Company: {{property.Total_Amount_To_Company}}</p>
+                <br>
+                <p>Total Listing Agents: {{property.Total_Listing_Agents}}</p>
+                <br>
+                <p>Total Selling Agents: {{property.Total_Selling_Agents}}</p>
+
+            </div>
+
+
+        </div>
+    </mat-tab>
+
+
+    <mat-tab label="Upload">
+        <div style="min-width: 80vw;    margin-left: 20px;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- <h2 style="padding-top: 2%;">Upload Category</h2>
+            <mat-form-field>
+                <mat-label style="font-size: 16px;">Choose an option</mat-label>
+                <mat-select [(value)]="selectedCategory" style="font-size: 16px;">
+                    <mat-option value="option1" style="font-size: 14px;">Option 1</mat-option>
+                    <mat-option value="option2" style="font-size: 14px;">Option 2</mat-option>
+                    <mat-option value="option3" style="font-size: 14px;">Option 3</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <p>You selected: {{selectedCategory}}</p> -->
+
+            <app-customedropzone style="padding-right: 2% !important;
+            display: block;" (valueChange)="onUploadSuccess($event)" [removeFile]="fileRemove"></app-customedropzone>
+
+            <h1 style="display: flex;" *ngIf="!hideuploadbutton">Upload Preview</h1>
+            <div class="buttondiv" *ngIf="!hideuploadbutton">
+                <button *ngIf="!buttondisble" class="custom-btn btn-11 animation " style="width: 98%;"
+                    (click)="submitDocs()"><span>Upload</span></button>
+                <button *ngIf="buttondisble" class="custom-btn btn-9 animation" style="width: 98%;"
+                    [disabled]="true"><span>Upload</span></button>
+            </div>
+
+            <mat-divider></mat-divider>
+
+            <div style="display: contents;" *ngIf="!hideuploadbutton">
+                <mat-card *ngFor="let item of urlList" class="cards" style="box-shadow: 6px 4px 20px 0px #929292;">
+                    <mat-card-content>
+                        <h2 style="text-align: center;">{{item.name}}</h2>
+                        <img class="imgStyle" [src]="item.media"
+                            *ngIf="item.type === 'image/png' || item.type === 'image/jpeg'">
+
+                        <pdf-viewer data="{{item.media}}" [src]="item.media" [render-text]="true"
+                            [original-size]="false" *ngIf="item.type === 'application/pdf'"
+                            style="width: inherit; height: 600px"></pdf-viewer>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </mat-tab>
+
+    <mat-tab label="View Uploaded">
+        <div style="min-width: 80vw;    margin-left: 20px;">
+            <!-- <h4>View Category</h4>
+            <mat-form-field>
+                <mat-label style="font-size: 16px;">Choose an option</mat-label>
+                <mat-select [(value)]="selectedViewCategory" (selectionChange)="viewChange()" style="font-size: 16px;">
+                    <mat-option value="All" style="font-size: 14px;">All</mat-option>
+                    <mat-option value="option1" style="font-size: 14px;">Option 1</mat-option>
+                    <mat-option value="option2" style="font-size: 14px;">Option 2</mat-option>
+                    <mat-option value="option3" style="font-size: 14px;">Option 3</mat-option>
+                </mat-select>
+            </mat-form-field> -->
+
+            <mat-divider></mat-divider>
+
+
+
+            <br>
+            <br>
+            <button *ngIf="isOpenFiles" class="custom-btn btn-11 animation " style="width: 98%;"
+                (click)="closedoc()"><span>Close</span></button>
+            <br>
+            <br>
+
+            <mat-divider></mat-divider>
+            <img *ngIf="isOpenFiles && isImage == true" src={{filecontainer}} style="width: 90%;">
+            <pdf-viewer *ngIf="isOpenFiles && isPdf == true" [src]="filecontainer" [render-text]="true"
+                [original-size]="false" style="width: 100%; height: 840px"></pdf-viewer>
+            <div class="flexablediv">
+                <mat-list *ngIf="!isOpenFiles" class="mat-list-test">
+
+                    <mat-list-item class="mat-list-item-test textHover" *ngFor="let item of userDocuments"
+                        (click)="goToLink(item.File)">
+
+                        <mat-icon *ngIf="item.type === 'pdf'" matListItemIcon><img
+                                src="../../assets/Images/pdf.svg"></mat-icon>
+
+                        <mat-icon *ngIf="item.type != 'pdf'" matListItemIcon> <img
+                                src="../../assets/Images/imagefile.svg"
+                                style="width: 30px;    float: inline-end;"></mat-icon>
+
+
+                        <!-- 
+                        <div matListItemTitle style="font-size: 14px;">{{item.File_Container_Name | truncate:20}}
+                        </div> -->
+
+                        <div matListItemTitle style="font-size: 14px;"> {{ (item.Filename.length>14)?
+                            (item.Filename | slice:0:14)+'...':(item.Filename) }}
+                        </div>
+
+
+                        <div matListItemLine style="font-size: 14px;">
+                            {{item.Date_Created +' : '+
+                            item.Time_Created}}
+                        </div>
+
+                    </mat-list-item>
+                </mat-list>
+            </div>
+        </div>
+    </mat-tab>
+
+</mat-tab-group>

@@ -1,0 +1,308 @@
+<nav class="nav__cont" style="    padding-top: 90px;">
+    <ul class="nav">
+        <li class="nav__items ">
+            <img src="../../../assets/Images/pdf-download.svg" style="width: 50px;">
+            <a (click)="captureScreen()">Download</a>
+        </li>
+
+        <li class="nav__items ">
+            <img src="../../../assets/Images/print-real.svg" style="width: 50px;">
+            <a (click)="captureScreenPrint()">Print</a>
+        </li>
+    </ul>
+</nav>
+
+
+<div class="wrapper">
+    <main>
+        <mat-card
+            style=" position: absolute; max-height: 1100px;    box-shadow: 6px 4px 20px 0px #929292;margin-left: 10vw;">
+            <mat-card-content>
+                <div id="contentToConvert">
+
+                    <div style="position: relative;height:297mm;width:210mm;padding-left: 20px;">
+
+                        <mat-grid-list cols="10" rowHeight="100px">
+
+                            <mat-grid-tile colspan="6.5" rowspan="4" class="script-menu">
+                                <div style="padding-top: 2%;">
+                                    <img style="width: 150px;float: left;" src="../../../assets/Images/PV4PLogo.PNG">
+                                    <div style="padding-left: 35%;">
+                                        <h2 style="font-size: 15px;">South African Council for the</h2>
+                                        <h2 style="font-size: 15px;">Property Valuers Profession</h2>
+                                        <h2 style="font-size: 12px;">P O Box 114, Lynwood Glen,</h2>
+                                        <h2 style="font-size: 12px;">Pretoria, 0063</h2>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+
+                                <div class='componentWrapperCustomerDetails'>
+                                    <div>
+                                        <h2
+                                            style="padding-left: 1%;border-radius: 10px 10px 0px 0px;background-color: lightgray;">
+                                            Submitted
+                                            To :</h2>
+                                    </div>
+
+                                    <div style="border-top: 2px solid black;width: 100%;"></div>
+                                    <h1 style="padding-left: 1%;">{{this.userInvoices[0]?.Customer_Name}}</h1>
+                                    <h4 style="padding-left: 1%;">{{this.userInvoices[0]?.Address1}}</h4>
+                                    <h4 style="padding-left: 1%;">{{this.userInvoices[0]?.Address2}}</h4>
+                                    <h4 style="padding-left: 1%;">{{this.userInvoices[0]?.Address3}}</h4>
+                                    <h4 style="padding-left: 1%;">{{this.userInvoices[0]?.Address4}}</h4>
+                                    <h4 style="padding-left: 1%;">{{this.userInvoices[0]?.Address5}}</h4>
+                                    <br>
+                                    <div style="border-top: 2px solid black;width: 100%;"></div>
+                                    <div>
+                                        <h3 style="padding-left: 1%;">Contact : {{this.userInvoices[0]?.Customer_Name}}
+                                        </h3>
+                                        <h3 style="padding-left: 1%;">Phone No : {{this.userInvoices[0]?.Contact_Tel}}
+                                        </h3>
+                                    </div>
+                                </div>
+                            </mat-grid-tile>
+
+                            <mat-grid-tile colspan="3.4" rowspan="4" class="script-menu">
+                                <div style="padding-left: 4%;border-left: 4px solid black;">
+                                    <h1 style="font-size: 20px;text-align: center;">Statement</h1>
+
+                                    <h2 style="font-size: 13px;border-bottom: 1px solid black;text-align: left;">Date :
+                                    </h2>
+                                    <h2 style="font-size: 13px;text-align: right;">({{currentDate}})
+                                    </h2>
+                                    <h2 style="font-size: 13px;text-align: left;border-bottom: 1px solid black;">Cutomer
+                                        Ref :
+                                    </h2>
+                                    <h2 style="font-size: 13px;text-align: right;">{{this.userInvoices[0]?.CustomerNo}}
+                                    </h2>
+                                    <div style="font-size: 13px;text-align: left;height: 60px;">
+
+                                    </div>
+
+                                </div>
+
+                            </mat-grid-tile>
+
+                        </mat-grid-list>
+
+
+                        <div class="componentWrapperTableHeader">
+                            <h2>Statement Details</h2>
+                        </div>
+                        <mat-divider style="border: 1px solid;"></mat-divider>
+                        <div [ngStyle]="{'min-height.px':TableHeight}">
+
+
+                            <table mat-table [dataSource]="dataSource" style="height: 52%;">
+
+
+                                <ng-container *ngIf="!printing" matColumnDef="InvoiceID">
+                                    <th mat-header-cell *matHeaderCellDef>View Inv</th>
+                                    <td mat-cell *matCellDef="let row" style="width: 80px;text-align: center;">
+                                        <button mat-icon-button title="View Invoice" class="viewHover"
+                                            (click)="goToInvoice(row.InvoiceID)">
+                                            <div>
+                                                <img style="padding-bottom: 10px;" src="../../assets/svg/search.svg">
+                                            </div>
+                                        </button>
+                                    </td>
+
+                                </ng-container>
+
+                                <ng-container matColumnDef="InvoiceIDS">
+                                    <th mat-header-cell *matHeaderCellDef> Inv#</th>
+                                    <td mat-cell *matCellDef="let row" style="text-align: left;"> {{row.InvoiceID}}
+                                    </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="Date">
+                                    <th mat-header-cell *matHeaderCellDef> Date Invoice </th>
+                                    <td mat-cell *matCellDef="let row" style="text-align: left;"> {{row.Date}} </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="Grand_Total">
+                                    <th mat-header-cell *matHeaderCellDef> Total </th>
+                                    <td mat-cell *matCellDef="let row">
+                                        <div *ngIf="row.Grand_Total >= 0">{{row.Grand_Total | number:'1.2-2'}}</div>
+                                        <div *ngIf="row.Grand_Total < 0"> ({{row.Grand_Total *-1 | number:'1.2-2'}})
+                                        </div>
+
+
+                                </ng-container>
+
+                                <ng-container matColumnDef="Credit_Amount">
+                                    <th mat-header-cell *matHeaderCellDef> CR Notes </th>
+                                    <td mat-cell *matCellDef="let row">
+                                        <div *ngIf="row.Credit_Amount >= 0">{{row.Credit_Amount | number:'1.2-2'}}</div>
+                                        <div *ngIf="row.Credit_Amount < 0">({{row.Credit_Amount *-1 | number:'1.2-2'}})
+                                        </div>
+
+                                    </td>
+                                </ng-container>
+
+                                <!-- <ng-container matColumnDef="DebitAmount">
+                                    <th mat-header-cell *matHeaderCellDef> DR Notes </th>
+                                    <td mat-cell *matCellDef="let row"> {{row.DebitAmount | number:'1.2-2'}} </td>
+                                </ng-container> -->
+
+
+                                <ng-container matColumnDef="OS_Total">
+                                    <th mat-header-cell *matHeaderCellDef> Outstanding </th>
+                                    <td mat-cell *matCellDef="let row">
+                                        <div *ngIf="row.OS_Total >= 0">{{row.OS_Total | number:'1.2-2'}}</div>
+                                        <div *ngIf="row.OS_Total < 0">({{row.OS_Total *-1 | number:'1.2-2'}})</div>
+                                    </td>
+                                </ng-container>
+
+                                <!-- <ng-container matColumnDef="Man_Payment">
+                                    <th mat-header-cell *matHeaderCellDef> Amount Received </th>
+                                    <td mat-cell *matCellDef="let row"> {{row.Man_Payment | number:'1.2-2'}} </td>
+                                </ng-container> -->
+
+                                <ng-container matColumnDef="Payment">
+                                    <th mat-header-cell *matHeaderCellDef> Amount Paid </th>
+                                    <td mat-cell *matCellDef="let row">
+
+                                        <div *ngIf="row.Payment >= 0">{{row.Payment | number:'1.2-2'}}</div>
+                                        <div *ngIf="row.Payment < 0">({{row.Payment *-1 | number:'1.2-2'}})</div>
+                                    </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="Balance_Pay">
+                                    <th mat-header-cell *matHeaderCellDef> Balance </th>
+                                    <td mat-cell *matCellDef="let row">
+
+                                        <div *ngIf="row.Balance_Pay >= 0">{{row.Balance_Pay | number:'1.2-2'}}</div>
+                                        <div *ngIf="row.Balance_Pay < 0">({{row.Balance_Pay *-1 | number:'1.2-2'}})
+                                        </div>
+                                    </td>
+                                </ng-container>
+
+
+                                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                            </table>
+
+
+                            <h1>Notes
+                                <br>
+                                <div *ngFor="let item of userInvoices"> {{item.Notes}}</div>
+                            </h1>
+                            <br>
+                            <br>
+                            <h4 style="float: right;border-bottom: 1px solid black;width: 100px;text-align: right;">
+                                Balance
+                                due</h4>
+                            <br>
+                            <br>
+                            <h4 *ngIf="exactAmount < 0" style="float: right;text-align: right;">({{amountDue | currency
+                                :'R':'symbol':'1.2-2'}})</h4>
+                            <h4 *ngIf="exactAmount >= 0" style="float: right;text-align: right;">{{amountDue | currency
+                                :'R':'symbol':'1.2-2'}}</h4>
+                        </div>
+
+
+                        <mat-divider style="border: 1px solid;"></mat-divider>
+                        <br>
+                        <h1>Banking Details:</h1>
+                        <h2>Sa Council For Property Valuers Profession</h2>
+                        <h2>Account No:&nbsp; &nbsp;2140285741</h2>
+                        <h2>Bank:&nbsp; &nbsp;ABSA Bank Limited</h2>
+                        <h2>Branch:&nbsp; &nbsp;632005</h2>
+
+                        <!-- <mat-grid-list cols="6" rowHeight="30px" style="margin-top: 2%;" [gutterSize]="'0px'">
+                        
+                            <mat-grid-tile colspan="3" rowspan="5" class="script-menu">
+                                <h1 style="font-weight: bolder;">Payment Advice</h1>
+                                <h2 style="padding-left: 10px;">{{userInvoices[0]?.Customer_Name}}</h2>
+                            </mat-grid-tile>
+        
+                            <mat-grid-tile colspan="2" rowspan="1" class="script-menu">
+                                <h2 style="text-align: left;
+                                border-bottom: 1px solid black;
+                                width: 60%;">Date:</h2>
+                            </mat-grid-tile>
+                            <mat-grid-tile colspan="1" rowspan="1" class="script-menu">
+                                <h1 style="text-align: right;">Statement</h1>
+                            </mat-grid-tile>
+        
+                           
+                            <mat-grid-tile colspan="2" rowspan="1" class="script-menu">
+                                <h2 style="text-align: center;width: 60%;">{{currentDate}}</h2>
+                            </mat-grid-tile>
+                            <mat-grid-tile colspan="1" rowspan="1" class="script-menu">
+                                <h2 style="text-align: right;border-bottom: 1px solid black;">Balance due</h2>
+                            </mat-grid-tile>
+        
+                         
+                            <mat-grid-tile colspan="2" rowspan="1" class="script-menu">
+                                <h2 style="text-align: right;border-bottom: 1px solid black;width: 60%;text-align: left;">
+                                    Customer Ref </h2>
+                            </mat-grid-tile>
+                            <mat-grid-tile colspan="1" rowspan="1" class="script-menu">
+                                <h2 style="text-align: right;" *ngIf="exactAmount < 0">
+                                    ({{amountDue | currency :'R':'symbol':'1.2-2'}})</h2>
+        
+                                <h2 style="text-align: right;" *ngIf="exactAmount > 0">
+                                    {{amountDue | currency :'R':'symbol':'1.2-2'}}</h2>
+        
+                            </mat-grid-tile>
+        
+                            
+                            <mat-grid-tile colspan="2" rowspan="1" class="script-menu">
+                                <h2 style="text-align: right;width: 60%;">{{this.userInvoices[0]?.CustomerNo}}</h2>
+                            </mat-grid-tile>
+                            <mat-grid-tile colspan="1" rowspan="1" class="script-menu">
+                                <h2 style="text-align: right;border-bottom: 1px solid black;">
+                                    PAYMENT MADE</h2>
+                            </mat-grid-tile>
+        
+                            
+                            <mat-grid-tile colspan="2" rowspan="1" class="script-menu">
+                                <h2 style="text-align: right;"></h2>
+                            </mat-grid-tile>
+                            <mat-grid-tile colspan="1" rowspan="1" class="script-menu">
+                                <h2 style="text-align: right;border: 1px solid black;">
+                                    &nbsp; &nbsp;&nbsp; &nbsp;</h2>
+                            </mat-grid-tile>
+        
+                          
+                            <mat-grid-tile colspan="2" rowspan="1" class="script-menu">
+                                <h2 style="text-align: left;">Sa Council For Property Valuers Profession</h2>
+                            </mat-grid-tile>
+                            <mat-grid-tile colspan="2" rowspan="1" class="script-menu">
+                                <h2 style="text-align: center;">Account No. 2140285741</h2>
+                            </mat-grid-tile>
+                            <mat-grid-tile colspan="2" rowspan="1" class="script-menu">
+                                <h2 style="text-align: right;">ABSA Bank Limited, 632005</h2>
+                            </mat-grid-tile>
+        
+                          
+                            <mat-grid-tile colspan="5" rowspan="4" class="script-menu">
+                                <div style="border: 2px solid black;background-color: lightgray;height: 44.5px;">
+                                    <h1>For: &nbsp; {{userInvoices[0]?.Customer_Name}}</h1>
+                                </div>
+                            </mat-grid-tile>
+                            <mat-grid-tile colspan="1" rowspan="4" class="script-menu">
+                                <div
+                                    style="border-top: 2px solid black;border-bottom: 2px solid black;border-right: 2px solid black">
+                                    <img style="width: 70px;display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;" src="../../assets/Images/statementpeople.PNG">
+                                </div>
+                            </mat-grid-tile>
+        
+                        </mat-grid-list> -->
+
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </main>
+</div>

@@ -1,0 +1,80 @@
+select {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    padding: 1em 5em 1em 1.5em;
+    background-color: rgb(31 110 212 / 95%);
+    color: white;
+    border: 0;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background-color: #3b3c47;
+    height: 100%;
+    width: 4rem;
+
+    /* ignores pointer events - passing thru */
+    pointer-events: none;
+}
+
+.custom-arrow::before,
+.custom-arrow::after {
+    --size: 0.75em;
+    --color: rgba(255, 255, 255, 0.5);
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-arrow::before {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid var(--color);
+    top: 40%;
+}
+
+.custom-arrow::after {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid var(--color);
+    top: 60%;
+}
+
+
+.icon {
+    width: 50px;
+    margin-left: 10px;
+    transition: transform ease 300ms;
+}
+
+.mat-divider.mat-divider-horizontal {
+    border-top-width: 4px;
+
+    &.divider-1 {
+        border-color: purple;
+    }
+
+    ;
+
+    &.divider-2 {
+        border-radius: 4px;
+        border-color: green;
+    }
+}
+
+.icon:hover {
+    // border-radius: 10px;
+    transform: scale(1.5);
+    transition: transform ease 300ms;
+    cursor: pointer;
+}

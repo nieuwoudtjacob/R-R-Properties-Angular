@@ -1,0 +1,15 @@
+.viewHover {
+    color: gray;
+    transition: transform ease 300ms;
+}
+
+.viewHover:hover {
+    transition: transform ease 300ms;
+    color: #187276;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+tr.mat-mdc-footer-row td {
+    font-weight: bold;
+}

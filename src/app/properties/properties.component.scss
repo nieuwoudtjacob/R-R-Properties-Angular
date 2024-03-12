@@ -1,0 +1,26 @@
+table {
+    width: 70% !important;
+}
+
+.mat-mdc-form-field {
+    font-size: 14px;
+    width: 70% !important;
+}
+
+td,
+th {
+    width: 15%;
+
+}
+
+.viewHover {
+    color: gray !important;
+    transition: transform ease 300ms;
+}
+
+.viewHover:hover {
+    transition: transform ease 300ms;
+    color: #0091ff !important;
+    transform: scale(1.2);
+    cursor: pointer;
+}

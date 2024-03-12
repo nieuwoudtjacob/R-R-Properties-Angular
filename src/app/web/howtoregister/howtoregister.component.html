@@ -1,0 +1,270 @@
+<!-- Header Starts -->
+<header id="header" class="fixed-top d-flex align-items-center header-transparent"
+    [style.background-color]="(top == false) ? 'rgb(31 110 212 / 95%)' : 'transparent'">
+    <div class="container d-flex align-items-center justify-content-between" style="max-width: 90%;">
+        <a href="index.html" style="margin-right: 20px;"><img src="assets/Images/PV4PLogo.PNG" alt="" class="img-fluid"
+                style="width: 60px;"></a>
+        <div class="logo">
+
+            <h1><a href="index.html">South African Council for the Property Valuers Profession</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li class="dropdown "><a class="nav-link scrollto " href="#hero"
+                        (click)="goToContruction(false)"><span>Home</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a class="nav-link scrollto" href="#about" (click)="goToContruction(false)">About</a>
+                        </li>
+                        <li><a class="nav-link scrollto" href="#services" (click)="goToContruction(false)">Services</a>
+                        </li>
+                        <li><a class="nav-link scrollto " href="#portfolio"
+                                (click)="goToContruction(false)">Portfolio</a>
+                        </li>
+                        <li><a class="nav-link scrollto" href="#faq" (click)="goToContruction(false)">FAQ</a></li>
+                        <li><a class="nav-link scrollto" href="#team" (click)="goToContruction(false)">Team</a></li>
+                        <li><a class="nav-link scrollto" href="#contact" (click)="goToContruction(false)">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="announcements">Announcements</a></li>
+                <li><a href="examinations">Examinations</a></li>
+
+                <li class="dropdown"><a href="events"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="notice">Notice</a></li>
+
+                        <li><a href="gallery">Gallery</a></li>
+
+                        <li class="dropdown"><a href=""><span>Conferences,
+                                    Workshops &
+                                    Seminars</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="practicalworkschool">Practical Workschool</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="TendersAndJobs">Tenders/Jobs</a></li>
+
+
+                <li class="dropdown"><a href="registrations" class="active"><span>Registrations</span> <i
+                            class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="HowToRegister" class="active">How to register</a></li>
+                        <li><a href="AccreditedProgrammes">
+                                Accredited Programmes</a></li>
+                        <li><a href="E-Log">e-Log Maintain Work Record</a></li>
+                        <li><a href="CET">
+                                CPD Activities and Allocation</a></li>
+                        <li><a href="RestrictionCodes">Restriction Codes</a></li>
+                        <li><a href="Learnership">
+                                Learnership</a></li>
+
+                    </ul>
+                </li>
+
+
+
+                <li><a href="ProfessionalFees">Professional Fees</a></li>
+
+
+
+                <li class="dropdown"><a href="standards"><span>Standards</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="MunicipalRatingStandards">
+                                Municipal Rating Standards</a></li>
+                        <li><a href="InternationalValuationStandards">
+                                International Valuation Standards</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown"><a href="LodgeALegalCaseOrComplaint"><span>Legal</span> <i
+                            class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="governance">Governance</a></li>
+                        <!-- <li><a href="">Lodge a legal case</a></li>
+                        <li class="dropdown"><a href=""><span>Code of conduct</span> <i
+                                    class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="LodgeALegalCaseOrComplaint">Lodge a legal case or
+                                        complaint</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </li>
+
+                <li class="dropdown"><a href="FindValuer"><span>Find Valuer</span></a>
+                    <!-- <ul>
+                    <li><a href="#" (click)="goToContruction(true)">
+                            Name search</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">Search by Council Number</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">
+                            Search by Category</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">Member Search</a></li>
+                </ul> -->
+                </li>
+
+
+
+
+
+
+
+                <li><a class="nav-link scrollto" (click)="toApp()" href="">Log In</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+    </div>
+</header>
+
+
+<!-- Content Starts  -->
+
+<div class="section-title" data-aos="zoom-out" style="padding-top: 100px;padding-left: 10px;">
+    <h2 style="font-size: 20px;">How to register </h2>
+</div>
+
+<div class="section-title" data-aos="zoom-out" style="padding-top: 10px;">
+    <h4 style="font-size: 16px;text-align: center;">Registration as a Candidate Valuer</h4>
+</div>
+<div style="margin-left: 20%;font-size: 14px;padding-right: 12%;">
+    <p>To commence the registration process as a Candidate Valuer submit a completed application along with the
+        requisite fee. </p>
+    <p><b>Click on the below links for forms and other registration documents</b></p>
+    <p><b class="hyper" (click)="openPDF()">Application form for registration.pdf</b></p>
+    <p><b class="hyper" (click)="openPDF2()">Registration Requirements Candidate valuer.pdf</b></p>
+    <br>
+    <p><b class="hyper" (click)="openPDF3()">CLICK HERE FOR ACCREDITED EDUCATION PROGRAMMES</b></p>
+    <br>
+    <p>To <b>register as a Candidate Valuer</b>, you need to be registered with the relevant tertiary institution for an
+        accredited Valuation programme, at least three subjects (SACPVP accredits their own Valuation programmes), an
+        application form must be completed and forwarded to the Council with the necessary documents. For more
+        information regarding other documents to be submitted please send an email to <a
+            href="mailto:info@sacpvp.co.za"><b class="hyper">info@sacpvp.co.za</b></a> </p>
+
+    <p><b>Note that annual fee is paid annually from the 1st of April and should the office not receive payment by 30
+            June, your registration will be cancelled and penalties added to the outstanding fees. </b></p>
+</div>
+
+<br>
+<br>
+<mat-divider></mat-divider>
+<br>
+<br>
+<div class="section-title" data-aos="zoom-out" style="padding-top: 10px;">
+    <h4 style="font-size: 16px;text-align: center;">Registration as a Professional Associated Valuer </h4>
+</div>
+<div style="margin-left: 20%;font-size: 14px;padding-right: 12%;">
+    <p>A Candidate must submit his/her application form together with the record of experience in the valuation work to
+        apply for the admission examination to become a Professional Associated Valuer. </p>
+    <p>Proof of qualifications ( graduation certificate) in Valuation proof of attendance for the Practical Wrokschool
+        are pre-requisites for applying for the admission examination. For more information regarding what documents are
+        needed for applying, please send an email to <a href="mailto:info@sacpvp.co.za"><b
+                class="hyper">info@sacpvp.co.za</b></a> </p>
+    <p><b>Note that annual fee is paid annually from the 1st of April and should the office not receive payment by 30
+            June, your registration will be cancelled and penalties added to the outstanding fees. </b></p>
+</div>
+<br>
+<br>
+<mat-divider></mat-divider>
+<br>
+<br>
+<div class="section-title" data-aos="zoom-out" style="padding-top: 10px;">
+    <h4 style="font-size: 16px;text-align: center;">Registration as a Professional Valuer</h4>
+</div>
+<div style="margin-left: 20%;font-size: 14px;padding-right: 12%;">
+    <p>For a Professional Associated Valuer to become a Professional Valuer, he / she must have acquired sufficient
+        experience to qualify to write an admission examination for Professional Valuers. </p>
+    <p>To apply for the Council admission examination, you must at leas be registered with the Council for a minimum
+        period of three years. </p>
+    <p><b>As at 1st April 2019, a registered person must have a recognizes four year degree in order to be able to apply
+            for the Professional Valuer examination.</b></p>
+    <p><b>Note that annual fee is paid annually from the 1st of April and should the office not receive payment by 30
+            June, your registration will be cancelled and penalties added to the outstanding fees. </b></p>
+</div>
+<br>
+<br>
+<mat-divider></mat-divider>
+<br>
+<br>
+<div class="section-title" data-aos="zoom-out" style="padding-top: 10px;">
+    <h4 style="font-size: 16px;text-align: center;">Registration of International Qualifications </h4>
+</div>
+<div style="margin-left: 20%;font-size: 14px;padding-right: 12%;">
+    <p>To be registered as a valuer or an associated valuer, a person from another country who is in possession of a
+        foreign qualification recognized by the Council, shall:</p>
+    <ul>
+        <li>Apply to the Council for registration by completing the prescribed application form, giving full details of
+            practical experience of work in property valuation gained in the country of origin;</li>
+        <li>Pay the prescribed registration fee;</li>
+        <li>Gain practical experience of work in property valuation as contemplated in section 20(2)(a)(iii) of the
+            Property Valuers Profession Act, for a minimum period of one year, under supervision of a professional
+            valuer or a professional associated valuer;</li>
+        <li>Notify the Council of the name of the supervisor;</li>
+        <li>Submit a complete record, certified by the supervisor, of the practical experience gained in the Republic;
+        </li>
+        <li>Pass two subjects covering South African property law;</li>
+        <li>Attend the practical workschool presented annually by SACPVP and pass the examination set at the end
+            thereof;</li>
+        <li>Pass the Council’s examination for professional valuers or professional associated valuers, as the case may
+            be. </li>
+    </ul>
+</div>
+<br>
+<br>
+<mat-divider></mat-divider>
+<br>
+<br>
+<div class="section-title" data-aos="zoom-out" style="padding-top: 10px;">
+    <h4 style="font-size: 16px;text-align: center;">ACCREDITED EDUCATIONAL INSTITUTIONS/PROGRAMMES </h4>
+</div>
+<div style="margin-left: 20%;font-size: 14px;padding-right: 12%;">
+    <p>Seven universities and universities of technology programmes have been granted accreditation in terms of the
+        legal requirements of SACPVP.</p>
+</div>
+<br>
+<br>
+<mat-divider></mat-divider>
+<br>
+<br>
+<div class="section-title" data-aos="zoom-out" style="padding-top: 10px;">
+    <h4 style="font-size: 16px;text-align: center;">Continuous Professional Development (CPD) </h4>
+</div>
+<div style="margin-left: 20%;font-size: 14px;padding-right: 12%;">
+    <p>The CPD Policy is now in place and from 01 April 2008 professionals have been requested to submit their CPD
+        points for the period 01 April 2007 till 31 March 2008. This is another legislative requirement to ensure that
+        professionals keep up to date with developments in their profession. </p>
+    <p>CPD includes activities such as attending workshops, seminars, conferences, delivering lectures and publishing
+        papers on property valuations topics. </p>
+    <p>According to this policy, all professionals must submit a minimum of eight points of professional development
+        annually and forty points within a cycle of five years in order to stay registered with the Council. This
+        requirement does not affect candidate valuers. </p>
+    <p>As from 1st April 2017, the Council is increasing the number of CPD points to be submitted annually to ten (10) .
+    </p>
+</div>
+<br>
+<br>
+<mat-divider></mat-divider>
+<br>
+<br>
+<div style="margin-left: 20%;font-size: 14px;padding-right: 12%;">
+    <p>Consult <a href="mailto:kate@sacpvp.co.za"><b class="hyper">kate@sacpvp.co.za</b></a> for all CPD related issues
+        and the Registrar for CPD points for attendance of valuation appeal boards and any other activity. </p>
+</div>
+<br>
+<br>
+<!-- Footer Starts -->
+<app-footer></app-footer>
+
+<!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+    [style.visibility]="(bottomscrollarrow == false) ? 'hidden' : 'unset'"
+    [style.opacity]="(bottomscrollarrow == false) ? '0' : '1'"><i class="bi bi-arrow-up-short"></i></a>

@@ -1,0 +1,1224 @@
+<header id="header" class="fixed-top d-flex align-items-center  header-transparent"
+    [style.background-color]="(top == false) ? 'rgb(31 110 212 / 95%)' : 'transparent'">
+    <div class="container d-flex align-items-center justify-content-between" style="max-width: 90%;">
+        <a href="index.html" style="margin-right: 20px;"><img src="assets/Images/PV4PLogo.PNG" alt=""
+                style="width: 60px;"></a>
+        <div class="logo">
+
+            <h1 style="margin-top: 4%;"> <a href="index.html">South African Council for the Property Valuers
+                    Profession</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li class="dropdown "><a class="nav-link scrollto active" href="#hero"
+                        (click)="goToContruction(false)"><span>Home</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a class="nav-link scrollto" href="#about" (click)="goToContruction(false)">About</a>
+                        </li>
+                        <li><a class="nav-link scrollto" href="#services" (click)="goToContruction(false)">Services</a>
+                        </li>
+                        <li><a class="nav-link scrollto " href="#portfolio"
+                                (click)="goToContruction(false)">Portfolio</a></li>
+                        <li><a class="nav-link scrollto" href="#faq" (click)="goToContruction(false)">FAQ</a></li>
+                        <li><a class="nav-link scrollto" href="#team" (click)="goToContruction(false)">Team</a></li>
+                        <li><a class="nav-link scrollto" href="#contact" (click)="goToContruction(false)">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="announcements">Announcements</a></li>
+                <li><a href="examinations">Examinations</a></li>
+
+                <li class="dropdown"><a href="events"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="notice">Notice</a></li>
+
+                        <li><a href="gallery">Gallery</a></li>
+
+                        <li class="dropdown"><a href=""><span>Conferences,
+                                    Workshops &
+                                    Seminars</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="practicalworkschool">Practical Workschool</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="TendersAndJobs">Tenders/Jobs</a></li>
+
+
+                <li class="dropdown"><a href="registrations"><span>Registrations</span> <i
+                            class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="HowToRegister">How to register</a></li>
+                        <li><a href="AccreditedProgrammes">
+                                Accredited Programmes</a></li>
+                        <li><a href="E-Log">e-Log Maintain Work Record</a></li>
+                        <li><a href="CET">
+                                CPD Activities and Allocation</a></li>
+                        <li><a href="RestrictionCodes">Restriction Codes</a></li>
+                        <li><a href="Learnership">
+                                Learnership</a></li>
+
+                    </ul>
+                </li>
+
+
+
+                <li><a href="ProfessionalFees">Professional Fees</a></li>
+
+
+
+                <li class="dropdown"><a href="standards"><span>Standards</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="MunicipalRatingStandards">
+                                Municipal Rating Standards</a></li>
+                        <li><a href="InternationalValuationStandards">
+                                International Valuation Standards</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown"><a href="LodgeALegalCaseOrComplaint"><span>Legal</span> <i
+                            class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="governance">Governance</a></li>
+                        <!-- <li><a href="">Lodge a legal case</a></li>
+                        <li class="dropdown"><a href=""><span>Code of conduct</span> <i
+                                    class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="LodgeALegalCaseOrComplaint">Lodge a legal case or
+                                        complaint</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </li>
+
+                <li class="dropdown"><a href="FindValuer"><span>Find Valuer</span></a>
+                    <!-- <ul>
+                    <li><a href="#" (click)="goToContruction(true)">
+                            Name search</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">Search by Council Number</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">
+                            Search by Category</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">Member Search</a></li>
+                </ul> -->
+                </li>
+
+
+
+
+
+
+
+                <li><a class="nav-link scrollto" (click)="toApp()" href="">Log In</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+    </div>
+</header>
+
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="8000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <div class="carousel-container">
+                <h2 class="animate__animated animate__fadeInDown">Council for the Built Environment (CBE)</h2>
+                <p class="animate__animated animate__fadeInUp"><img style="width: 150px;"
+                        src="../../../assets//Images/cbe_logo_-_2021_nav.png" loading="lazy"><br><br>The Council for the
+                    Built
+                    Environment
+                    (CBE) is a Schedule
+                    3A Public Entity that reports to the National Department of Public Works and Infrastructure. It is a
+                    regulatory body established under the Council for the Built Environment Act (No. 43 of 2000) (the
+                    CBE Act).
+                    The CBE was established for the purpose of instilling good conduct within built environment
+                    professions, mobilising transformation in the built environment professions, protecting the interest
+                    of the public and advising the South African Government on Built Environment related issues.</p>
+                <a class="btn-get-started animate__animated animate__fadeInUp scrollto" target="https://cbe.org.za/"
+                    href="https://cbe.org.za/">Read
+                    More</a>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <div class="carousel-container">
+                <h2 class="animate__animated animate__fadeInDown">Municipal Rating Standard </h2>
+                <p class="animate__animated animate__fadeInUp">Municipal rating of property in South Africa, is
+                    primarily
+                    governed by the Local Government Municipal Property Rates Act, Act No 6 of 2004 (as amended),
+                    referred to as
+                    the Act of the MPRA. The rating of a property is based principally on the market value of a
+                    property.</p>
+                <a class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                    target="assets/Pdfs/SA_Standards_sMVPR2021_23_Ver9.1a.pdf"
+                    href="assets/Pdfs/SA_Standards_sMVPR2021_23_Ver9.1a.pdf">Read
+                    More</a>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <div class="carousel-container">
+                <h2 class="animate__animated animate__fadeInDown">International Valuation Standards Council (IVSC)</h2>
+                <p class="animate__animated animate__fadeInUp"><img style="width: 150px;"
+                        src="../../../assets//Images/ISVC.svg" loading="lazy"><br><br>The International Valuation
+                    Standards Council
+                    (IVSC), is a non-profit organisation dedicated to establishing and promoting global valuation
+                    standards to serve the public interest.</p>
+                <a class="btn-get-started animate__animated animate__fadeInUp scrollto" target="https://www.ivsc.org/"
+                    href="https://www.ivsc.org/">Read
+                    More</a>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+        </a>
+
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+            <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+            </path>
+        </defs>
+        <g class="wave1">
+            <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+        </g>
+        <g class="wave2">
+            <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+        </g>
+        <g class="wave3">
+            <use xlink:href="#wave-path" x="50" y="9" fill="lightgrey"></use>
+        </g>
+    </svg>
+
+</section><!-- End Hero -->
+
+<main id="main">
+
+    <!-- ======= construction Section ======= -->
+    <!-- <section id="construction" class="about">
+            <div class="container">
+
+                <div class="section-title" data-aos="zoom-out">
+                    <h2>Construction</h2>
+                    <p></p>
+                </div>
+
+                <div class="row content" data-aos="fade-up">
+                    <h1 style="color: red;text-align: center;font-size: 30px;">The WebSite is still under construction,
+                        some text and
+                        pages will be
+                        unavailable
+                    </h1>
+
+                    <app-construction-main></app-construction-main>
+
+
+
+                </div>
+
+            </div>
+        </section> -->
+    <!-- End construction Section -->
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+
+
+
+
+        <div class="container">
+
+            <div class="section-title" data-aos="zoom-out">
+                <h2>About</h2>
+                <p>Who we are</p>
+            </div>
+
+            <div class="row content" data-aos="fade-up">
+                <div class="col-lg-12">
+                    <p>
+                        SACPVP is a statutory body established on 1 January 1983 as the South African Council for
+                        Valuers, which
+                        was replaced by the SA Council for the Property Valuers Profession established by section 2
+                        of
+                        The
+                        Property Valuers Profession Act, 2000.
+
+                        SACPVP sees itself in partnership with the State and the valuers profession to promote a
+                        high
+                        level of
+                        education and training of practitioners in the Property Valuers Profession so as to
+                        facilitate
+                        full
+                        recognition of professionalism in the valuers profession, both locally and abroad. It enjoys
+                        full autonomy
+                        - although it is accountable to the State, the profession and the public for the fair and
+                        transparent
+                        administration of its business in the pursuit of its goals..
+
+                        SACPVP is one of the six councils who operate in the Built Environment being:
+
+                    </p>
+
+                </div>
+                <div class="col-lg-2 pt-4 pt-lg-1">
+                    <ul>
+                        <li><i class="ri-check-double-line"></i> SACPVP</li>
+                        <li><i class="ri-check-double-line"></i> ECSA</li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-2 pt-4 pt-lg-1">
+                    <ul>
+
+                        <li><i class="ri-check-double-line"></i> SACPCMP</li>
+                        <li><i class="ri-check-double-line"></i> SACQSP</li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-2 pt-4 pt-lg-1">
+                    <ul>
+
+                        <li><i class="ri-check-double-line"></i> SACLAP</li>
+                    </ul>
+                </div>
+
+                <p style="margin-top: 2%;">The South African Council for Valuers was established on 1 January 1983 by
+                    section 2 of the Valuers
+                    Act, 1982 (Act No. 23 of 1982). On 31 August 2001, the Council was replaced by the SA Council for
+                    the Property Valuers Profession established by section 2 of The Property Valuers Profession Act,
+                    2000. </p>
+                <p><b>The Council’s main functions are:</b></p>
+                <ul>
+                    <li class="ri-check-double-line ">
+                        <b class="checkmarks">Registration of
+                            Professional Valuers,
+                            Professional Associated
+                            Valuers and Candidate Valuers.</b>
+                    </li>
+                    <li class="ri-check-double-line "><b class="checkmarks">Maintenance of their integrity</b></li>
+                    <li class="ri-check-double-line "><b class="checkmarks">Enhancement of their status</b></li>
+                    <li class="ri-check-double-line "><b class="checkmarks">Improvement of their academic and other
+                            qualifications and of the
+                            standard of services rendered by them</b></li>
+                    <li class="ri-check-double-line "><b class="checkmarks">Protection of members of the public in
+                            their dealings with
+                            registered persons</b></li>
+                    <li class="ri-check-double-line "><b class="checkmarks">Drawing up and keeping up to date a
+                            register of all registered
+                            persons </b></li>
+                    <li class="ri-check-double-line "><b class="checkmarks">To perform the function of protecting
+                            members of the public, the
+                            Council has promulgated rules which, inter alia, prescribe a Code of Conduct with which
+                            Valuers,
+                            Associated Valuers and Candidate Valuers have to comply in the performance of their work in
+                            property valuation</b></li>
+                </ul>
+
+
+            </div>
+            <!-- <a href="#" style="color: #ff6a00;margin-top: 10px;">
+                    <href></href> read more >>
+                </a> -->
+
+
+        </div>
+
+
+
+
+
+
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+        <div class="container">
+
+            <ul class="nav nav-tabs row d-flex">
+                <li class="nav-item col-3" data-aos="zoom-in">
+                    <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+                        <i class="ri-gps-line"></i>
+                        <h4 class="d-none d-lg-block">How to register</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
+                    <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+                        <i class="ri-body-scan-line"></i>
+                        <h4 class="d-none d-lg-block">Examinations</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="200">
+                    <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+                        <i class="ri-sun-line"></i>
+                        <h4 class="d-none d-lg-block">Restriction Codes</h4>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content" data-aos="fade-up">
+                <div class="tab-pane active show" id="tab-1">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                            <h3>There are 6 different categories to register as:</h3>
+                            <p class="fst-italic">
+                                Categories:
+                            </p>
+                            <ul>
+                                <li><i class="ri-check-double-line"></i>REGISTRATION AS A CANDIDATE VALUER</li>
+                                <li><i class="ri-check-double-line"></i>REGISTRATION AS A PROFESSIONAL ASSOCIATED VALUER
+                                </li>
+                                <li><i class="ri-check-double-line"></i> REGISTRATION AS A PROFESSIONAL VALUER</li>
+                                <li><i class="ri-check-double-line"></i> REGISTRATION OF INTERNATIONAL QUALIFICATIONS
+                                </li>
+                                <li><i class="ri-check-double-line"></i> ACCREDITED EDUCATIONAL INSTITUTIONS/PROGRAMMES
+                                </li>
+                                <li><i class="ri-check-double-line"></i> CONTINUOUS PROFESSIONAL DEVELOPMENT (CPD)</li>
+                            </ul>
+                            <a href="HowToRegister" class="readmoreText">
+                                Read More >>
+                            </a>
+                            <br>
+                            <br>
+                            <br>
+                            <p>
+                                To Register:
+                            </p>
+                            <a href="registrations" class="readmoreText">
+                                Registrations >>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2 text-center">
+                            <img src="assets/img/features-1.png" loading="lazy" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-2">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                            <h3>Examinations</h3>
+                            <p>
+                                ANNOUNCEMENT TO ALL REGISTERED CANDIDATE AND PROFESSIONAL ASSOCIATED VALUERS
+                            </p>
+                            <p>The South African Council for the Property Valuers Profession (SACPVP) is now accepting
+                                Board examination applications. </p>
+
+                            <p> Registered Candidates and Professional Associated Valuers who eligible and would like to
+                                write the examination on 20 March 2024 are invited to submit their applications by
+                                courier or hand delivery.</p>
+
+                            <p>Applications should be addressed to either Ms. Monyela or Mr. Ntsweng.</p>
+
+
+                            <ul>
+                                <li><i class="ri-check-double-line"></i> Applications sent via email will not be
+                                    accepted.</li>
+                                <li><i class="ri-check-double-line"></i>Closing date for the submission is 30 November
+                                    2023.
+                                </li>
+                            </ul>
+                            <p>For More Information and Pricing</p>
+                            <a href="examinations" class="readmoreText">
+                                Read More >>
+                            </a>
+
+
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2 text-center">
+                            <img src="assets/img/features-2.png" loading="lazy" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-3">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                            <h3>Restriction Codes</h3>
+                            <p><b>
+                                    PROFESSIONAL ASSOCIATED VALUERS REGISTERED IN TERMS OF SECTION 20(2)(a) OF THE
+                                    PROPERTY VALUERS PROFESSION ACT, 2000 (ACT NO. 47 OF 2000)
+                                </b> </p>
+                            <p>Where the registration number is followed by a letter or letters, that person is, in
+                                terms of his/her registration, entitled to practice property valuation in a specific
+                                field only. A list of the letters and the corresponding field follows.</p>
+                            <p>Some professional associated valuers choose to limit their activities to a specific field
+                                and those persons are often the experts in their particular fields.</p>
+                            <p><b>List of areas of work (Restriction)</b></p>
+
+                            <ul>
+                                <li><i class="ri-check-double-line"></i>Assessment rates & Endowment for a Local
+                                    Authority</li>
+                                <li><i class="ri-check-double-line"></i> Mortgage Bonds
+                                </li>
+                                <li><i class="ri-check-double-line"></i> Agricultural Properties</li>
+                            </ul>
+                            <p>For more Information:</p>
+                            <a href="RestrictionCodes" class="readmoreText">
+                                Read More >>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2 text-center">
+                            <img src="assets/img/features-3.png" loading="lazy" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+        <div class="container">
+
+            <div class="row" data-aos="zoom-out">
+                <div class="col-lg-9 text-center text-lg-start">
+                    <h3>Give Us a Call:</h3>
+                    <p> Our Professional Staff are always happy to assist</p>
+                </div>
+                <div class="col-lg-3 cta-btn-container text-center">
+                    <a class="cta-btn align-middle" href="tel:tel:+27 12 348 8643">Call +27 12 348 8643</a>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container">
+
+            <div class="section-title" data-aos="zoom-out">
+                <h2>Services</h2>
+                <p>What we do offer</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 mt-5" style="width: 50%;height: 169px;">
+                    <div class="icon-box" data-aos="zoom-in-left">
+                        <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;padding: 3px;"></i></div>
+                        <h4 class="title"><a href="">Registrations</a></h4>
+                        <p class="description">Registration of Professional Valuers, Professional Associated Valuers
+                            and
+                            Candidate
+                            Valuers.</p>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+                    <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
+                        <div class="icon"><i class="bi bi-book" style="color: #e9bf06;"></i></div>
+                        <h4 class="title"><a href="">Maintenance</a></h4>
+                        <p class="description">Maintenance of their integrity</p>
+                    </div>
+                </div> -->
+
+                <!-- <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+                    <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
+                        <div class="icon"><i class="bi bi-card-checklist" style="color: #3fcdc7;"></i></div>
+                        <h4 class="title"><a href="">Enhancement</a></h4>
+                        <p class="description">Enhancement of their status</p>
+                    </div>
+                </div> -->
+
+                <div class="col-lg-4 col-md-6 mt-5" style="width: 50%;height: 169px;">
+                    <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="300">
+                        <div class="icon"><i class="bi bi-binoculars" style="color:#41cf2e;padding: 3px;"></i></div>
+                        <h4 class="title"><a href="">Improvements</a></h4>
+                        <p class="description">Improvement of their academic and other qualifications and of the
+                            standard of
+                            services rendered by them</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mt-5" style="width: 50%;height: 169px;">
+                    <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="400">
+                        <div class="icon"><i class="bi bi-globe" style="color: #d6ff22;padding: 3px;"></i></div>
+                        <h4 class="title"><a href="">Protection</a></h4>
+                        <p class="description">Protection of members of the public in registered person dealings with
+                            registered
+                            persons</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-5" style="width: 50%;height: 169px;">
+                    <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="500">
+                        <div class="icon"><i class="bi bi-clock" style="color: #4680ff;padding: 3px;"></i></div>
+                        <h4 class="title"><a href="">Upkeep</a></h4>
+                        <p class="description">Drawing up and keeping up to date a register of all registered person
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Gallery ======= -->
+    <section id="portfolio" class="testimonials">
+        <div class="container">
+
+            <div class="section-title" data-aos="zoom-out">
+                <h2>PORTFOLIO</h2>
+                <p>WHAT WE'VE DONE</p>
+            </div>
+
+            <a href="gallery" class="readmoreText">
+                View Gallery >>
+            </a>
+
+            <swiper [config]="config" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+
+                <ng-template swiperSlide>
+                    <div class="testimonial-item" style="padding: 5px 5px 5px 5px;min-height: auto;">
+
+                        <img src="assets/SACPVP Gallery/20190823_120117.jpg" loading="lazy" style="width: 300px;"
+                            alt="">
+                        <h3>2019 PRACTICAL WORKSCHOOL</h3>
+
+                    </div>
+                </ng-template>
+
+                <ng-template swiperSlide>
+
+                    <div class="testimonial-item" style="padding: 5px 5px 5px 5px;min-height: auto;">
+
+                        <img src="assets/SACPVP Gallery/20190820_151451.jpg" loading="lazy" style="width: 300px;"
+                            alt="">
+                        <h3>2019 PRACTICAL WORKSCHOOL</h3>
+
+                    </div>
+                </ng-template>
+
+                <ng-template swiperSlide>
+                    <div class="testimonial-item" style="padding: 5px 5px 5px 5px;min-height: auto;">
+
+                        <img src="assets/SACPVP Gallery/20190820_131947.jpg" loading="lazy" style="width: 300px;"
+                            alt="">
+                        <h3>2019 PRACTICAL WORKSCHOOL</h3>
+
+                    </div>
+                </ng-template>
+
+                <ng-template swiperSlide>
+
+                    <div class="testimonial-item" style="padding: 5px 5px 5px 5px;min-height: auto;">
+                        <img src="assets/SACPVP Gallery/20190820_151739.jpg" loading="lazy" style="width: 300px;"
+                            alt="">
+                        <h3>2019 PRACTICAL WORKSCHOOL</h3>
+                    </div>
+                </ng-template>
+
+                <ng-template swiperSlide>
+                    <div class="testimonial-item" style="padding: 5px 5px 5px 5px;min-height: auto;">
+
+                        <img src="assets/SACPVP Gallery/2016-1/20160909_123015.jpg" loading="lazy" style="width: 300px;"
+                            alt="">
+                        <h3>2016 AFRES Conference</h3>
+
+                    </div>
+                </ng-template>
+
+                <ng-template swiperSlide>
+
+                    <div class="testimonial-item" style="padding: 5px 5px 5px 5px;min-height: auto;">
+
+                        <img src="assets/SACPVP Gallery/2016-2/IMG_20160822_154334.jpg" loading="lazy"
+                            style="width: 300px;" alt="">
+                        <h3>2016 PRACTICAL WORKSCHOOL</h3>
+
+                    </div>
+                </ng-template>
+
+            </swiper>
+
+        </div>
+    </section>
+
+
+
+    <!-- ======= Testimonials Section ======= -->
+    <!-- <section id="testimonials" class="testimonials">
+        <div class="container">
+
+            <div class="section-title" data-aos="zoom-out">
+                <h2>Testimonials</h2>
+                <p>What they are saying about us</p>
+            </div>
+           
+
+
+            <swiper [config]="config" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+
+                <ng-template swiperSlide>
+                    <div class="testimonial-item">
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Testimonial Comment Placeholder with sample picture, name and position
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                        <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                        <h3>Saul Goodman</h3>
+                        <h4>Ceo &amp; Founder</h4>
+                    </div>
+                </ng-template>
+
+                <ng-template swiperSlide>
+
+                    <div class="testimonial-item">
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Testimonial Comment Placeholder with sample picture, name and position
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                        <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                        <h3>Sara Wilsson</h3>
+                        <h4>Designer</h4>
+                    </div>
+                </ng-template>
+
+                <ng-template swiperSlide>
+                    <div class="testimonial-item">
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Testimonial Comment Placeholder with sample picture, name and position
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                        <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                        <h3>Jena Karlis</h3>
+                        <h4>Store Owner</h4>
+                    </div>
+                </ng-template>
+
+                <ng-template swiperSlide>
+
+                    <div class="testimonial-item">
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Testimonial Comment Placeholder with sample picture, name and position
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                        <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                        <h3>Matt Brandon</h3>
+                        <h4>Freelancer</h4>
+                    </div>
+                </ng-template>
+
+                <ng-template swiperSlide>
+                    <div class="testimonial-item">
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            Testimonial Comment Placeholder with sample picture, name and position
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                        <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                        <h3>John Larson</h3>
+                        <h4>Entrepreneur</h4>
+                    </div>
+                </ng-template>
+
+
+
+            </swiper>
+
+
+        </div>
+    </section> -->
+
+    <!-- ======= Pricing Section ======= -->
+    <!-- <section id="pricing" class="pricing">
+  <div class="container">
+
+    <div class="section-title" data-aos="zoom-out">
+      <h2>Pricing</h2>
+      <p>Our Competing Prices</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="box" data-aos="zoom-in">
+          <h3>Free</h3>
+          <h4><sup>$</sup>0<span> / month</span></h4>
+          <ul>
+            <li>Aida dere</li>
+            <li>Nec feugiat nisl</li>
+            <li>Nulla at volutpat dola</li>
+            <li class="na">Pharetra massa</li>
+            <li class="na">Massa ultricies mi</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+        <div class="box featured" data-aos="zoom-in" data-aos-delay="100">
+          <h3>Business</h3>
+          <h4><sup>$</sup>19<span> / month</span></h4>
+          <ul>
+            <li>Aida dere</li>
+            <li>Nec feugiat nisl</li>
+            <li>Nulla at volutpat dola</li>
+            <li>Pharetra massa</li>
+            <li class="na">Massa ultricies mi</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+        <div class="box" data-aos="zoom-in" data-aos-delay="200">
+          <h3>Developer</h3>
+          <h4><sup>$</sup>29<span> / month</span></h4>
+          <ul>
+            <li>Aida dere</li>
+            <li>Nec feugiat nisl</li>
+            <li>Nulla at volutpat dola</li>
+            <li>Pharetra massa</li>
+            <li>Massa ultricies mi</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+        <div class="box" data-aos="zoom-in" data-aos-delay="300">
+          <span class="advanced">Advanced</span>
+          <h3>Ultimate</h3>
+          <h4><sup>$</sup>49<span> / month</span></h4>
+          <ul>
+            <li>Aida dere</li>
+            <li>Nec feugiat nisl</li>
+            <li>Nulla at volutpat dola</li>
+            <li>Pharetra massa</li>
+            <li>Massa ultricies mi</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section> -->
+
+    <!-- End Pricing Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+        <div class="container">
+
+            <div class="section-title" data-aos="zoom-out">
+                <h2>F.A.Q</h2>
+                <p>Frequently Asked Questions</p>
+            </div>
+
+            <ul class="faq-list">
+
+                <li>
+                    <div data-bs-toggle="collapse" class="collapsed question" href="#faq1" style="font-size: 16px;">
+                        Is a
+                        candidate valuer allowed
+                        to have more than one supervisor? <i class="bi bi-chevron-down icon-show"></i><i
+                            class="bi bi-chevron-up icon-close"></i></div>
+                    <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            Yes, but the name(s) and address(es) of, and a written undertaking by each supervisor
+                            declaring his/her willingness to act as your supervisor must be submitted to the
+                            Council.
+                            Please note, if the supervisor’s registration is restricted, he or she can only assist
+                            you
+                            in the field of his/her restriction.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq2" class="collapsed question" style="font-size: 16px;">
+                        How
+                        do i become a property
+                        valuer?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                    </div>
+                    <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            Firstly you have to enrol at an educational institution accredited by the Council for
+                            the
+                            course that includes the prescribed or recognised examinations. Thereafter you have to
+                            register as a candidate valuer. Please see"Registration as a Candidate Valuer" for
+                            further
+                            details.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq3" class="collapsed question" style="font-size: 16px;">
+                        What
+                        is the extent of
+                        practical experience required for a candidate valuer to qualify for registration as a
+                        professional? <i class="bi bi-chevron-down icon-show"></i><i
+                            class="bi bi-chevron-up icon-close"></i></div>
+                    <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            See Annexure C.1 to the Rules for the Property Valuers Profession, 2008. The rules were
+                            amended and Gazetted in September 2016.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq4" class="collapsed question" style="font-size: 16px;">
+                        What
+                        is the difference
+                        between registration fees and annual fees, and when are they payable? <i
+                            class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                    </div>
+                    <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            A Registration Fee is payable when registering for the first time in a category, e.g.
+                            Professional Valuer, Professional Associated Valuer or Candidate Valuer. An Annual Fee
+                            is
+                            payable within 60 days of the date of registration and thereafter annually within 60
+                            days
+                            from 01 April. A notice stating the amount payable will be issued in each case.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq5" class="collapsed question" style="font-size: 16px;">
+                        May
+                        a person register under
+                        the name of the company that employs him/her? <i class="bi bi-chevron-down icon-show"></i><i
+                            class="bi bi-chevron-up icon-close"></i></div>
+                    <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            No, the Act provides for the registration of natural persons only.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq6" class="collapsed question" style="font-size: 16px;">
+                        What
+                        is the difference
+                        between the SA institute of Valuers and the SA council for the property valuers profession?
+                        <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                    </div>
+                    <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            The Institute is a voluntary association to which any suitably qualified person can
+                            belong
+                            and its objectives are centered around the interests of its members. Other voluntary
+                            associations are Black Valuers Association, Professional Valuers Association and Black
+                            Professional Valuers Association.
+
+                            The Council is a statutory body dealing with the compulsory registration of persons
+                            wishing
+                            to practise in the property valuers profession and its powers include taking any steps
+                            it
+                            considers necessary for the protection of the public in their dealings with persons so
+                            registered, and for the maintenance of the integrity, and the enhancement of the status
+                            of
+                            the property valuers profession.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq7" class="collapsed question" style="font-size: 16px;">
+                        Why do registered persons have to pay a levy to the Council for the Built Environment (“CBE”),
+                        and what does the CBE do for the registered persons?
+                        <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                    </div>
+                    <div id="faq7" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            The CBE is an overarching statutory body coordinating the activities of the professions in
+                            the built environment and it also acts as an appeal body in respect of certain decisions by
+                            the Council. It has been established by section 2 of the Council for the Built Environment
+                            Act No. 43 of 2000. All registered persons of the other five Councils pay the CBE levy as
+                            per CBE Act.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq8" class="collapsed question" style="font-size: 16px;">
+                        What is the difference between a professional valuer and a professional associated valuer?
+                        <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                    </div>
+                    <div id="faq8" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            A professional valuer is a person who has complied with the practical experience
+                            requirements for registration as set out in item 5(a) of Annexure C.1 to the Rules for the
+                            Property Valuers Profession, 2008, and has passed the admission examination for the
+                            professional valuers referred to in item 1(a) of that Annexure.
+                            A professional associated valuer without restrictions is a person who has complied with the
+                            practical experience requirements for registration as set out in item 5(b) of Annexure C.1
+                            to the Rules for the Property Valuers Profession, 2008, and has passed the admission
+                            examination for professional valuers referred to in item 1(b) of that Annexure.
+                            A professional associated valuer with a restriction is a person who has complied with the
+                            practical experience requirements for registration as such set out in item 5(c) of Annexure
+                            C.1 to the Rules for the Property Valuers Profession, 2008, and has passed the admission
+                            examination for professional associated valuers referred to in item 1(b) of that Annexure.
+
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq9" class="collapsed question" style="font-size: 16px;">
+                        Have the prescribed examinations for registration as a professional been recognised overseas?
+                        <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                    </div>
+                    <div id="faq9" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            Not as yet.
+
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq10" class="collapsed question" style="font-size: 16px;">
+
+                        What are the requirements for registration of a person holding a foreign qualification?
+
+                        <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                    </div>
+                    <div id="faq10" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            See “Registration of Foreign Valuers”.
+
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq11" class="collapsed question" style="font-size: 16px;">
+
+                        Does the property valuers profession act, 2000, apply in neighbouring and other foreign
+                        countries?
+
+                        <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                    </div>
+                    <div id="faq11" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            No, it is a South African Law for South African residents only.
+
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq12" class="collapsed question" style="font-size: 16px;">
+
+                        When may a candidate Valeur sit for the admission examination for professional associated
+                        valuer?
+                        <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                    </div>
+                    <div id="faq12" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            After obtaining the prescribed or recognised examinations and complying with the provisions
+                            of item 2 of Annexure C.1 to the Rules for the Property Valuers Profession, 2008.
+
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div data-bs-toggle="collapse" href="#faq13" class="collapsed question" style="font-size: 16px;">
+
+                        What is the pass mark for the admission examination?
+
+                        <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                    </div>
+                    <div id="faq13" class="collapse" data-bs-parent=".faq-list">
+                        <p>
+                            60% overall and a minimum of 40% in the section dealing with the Time Value of Money.
+
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Team Section ======= -->
+    <!-- <section id="team" class="team">
+        <div class="container">
+
+            <div class="section-title" data-aos="zoom-out">
+                <h2>Team</h2>
+                <p>Our Hardworking Team</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up">
+                        <div class="member-img">
+                            <img src="assets/sacpvp members/john_cloete_photo.png" loading="lazy" class="img-fluid2"
+                                alt="">
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>John Cloete</h4>
+                            <span>President</span>
+                            <a class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                                href="Portfolio#John">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member-img">
+                            <img src="assets/sacpvp members/nirmala_devi_naidoo_photo.jpg" loading="lazy"
+                                class="img-fluid2" alt="">
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Roshinee Naidoo</h4>
+                            <span>Acting Registrar</span> <a
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                                href="Portfolio#Roshinee">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+         
+
+            </div>
+
+        </div>
+    </section> -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="section-title" data-aos="zoom-out">
+                <h2>Contact</h2>
+                <p>Contact Us</p>
+            </div>
+
+            <div class="row mt-5">
+
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="info">
+                        <div class="address"><a
+                                href="https://www.google.com/maps/place/77+Kariba+St,+Lynnwood+Glen,+Pretoria,+0081/@-25.7784468,28.2816026,17z/data=!3m1!4b1!4m6!3m5!1s0x1e95609637bd015b:0xd8f81b90eb7ad3d0!8m2!3d-25.7784468!4d28.2841829!16s%2Fg%2F11fsjq91t1?entry=ttu"
+                                target="_blank">
+                                <i class="bi bi-geo-alt"></i>
+                                <h4>Location:</h4>
+                                <p>77 Kariba Street
+                                    Lynnwood Glen
+                                    Pretoria
+                                    Gauteng
+                                    0081</p>
+                            </a>
+                        </div>
+
+                        <div class="email"><a href="mailto:info@sacpvp.co.za;admin@sacpvp.co.za" target="_blank">
+                                <i class="bi bi-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>info@sacpvp.co.za<br>admin@sacpvp.co.za</p>
+                            </a>
+                        </div>
+
+                        <div class="phone"><a href="tel:+2712 348 8643">
+                                <i class="bi bi-phone"></i>
+                                <h4>Call:</h4>
+                                <p>+27 (0)12 348 8643</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
+
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                    required>
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<app-footer></app-footer>
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+    [style.visibility]="(bottomscrollarrow == false) ? 'hidden' : 'unset'"
+    [style.opacity]="(bottomscrollarrow == false) ? '0' : '1'"><i class="bi bi-arrow-up-short"></i></a>

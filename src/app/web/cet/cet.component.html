@@ -1,0 +1,178 @@
+<!-- Header Starts -->
+<header id="header" class="fixed-top d-flex align-items-center  header-transparent"
+    [style.background-color]="(top == false) ? 'rgb(31 110 212 / 95%)' : 'transparent'">
+    <div class="container d-flex align-items-center justify-content-between" style="max-width: 90%;">
+        <a href="index.html" style="margin-right: 20px;"><img src="assets/Images/PV4PLogo.PNG" alt="" class="img-fluid"
+                style="width: 60px;"></a>
+        <div class="logo">
+
+            <h1><a href="index.html">South African Council for the Property Valuers Profession</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li class="dropdown "><a class="nav-link scrollto " href="#hero"
+                        (click)="goToContruction(false)"><span>Home</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a class="nav-link scrollto" href="#about" (click)="goToContruction(false)">About</a>
+                        </li>
+                        <li><a class="nav-link scrollto" href="#services" (click)="goToContruction(false)">Services</a>
+                        </li>
+                        <li><a class="nav-link scrollto " href="#portfolio"
+                                (click)="goToContruction(false)">Portfolio</a></li>
+                        <li><a class="nav-link scrollto" href="#faq" (click)="goToContruction(false)">FAQ</a></li>
+                        <li><a class="nav-link scrollto" href="#team" (click)="goToContruction(false)">Team</a></li>
+                        <li><a class="nav-link scrollto" href="#contact" (click)="goToContruction(false)">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="announcements">Announcements</a></li>
+                <li><a href="examinations">Examinations</a></li>
+
+                <li class="dropdown"><a href="events"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="notice">Notice</a></li>
+
+                        <li><a href="gallery">Gallery</a></li>
+
+                        <li class="dropdown"><a href=""><span>Conferences,
+                                    Workshops &
+                                    Seminars</span> <i class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="practicalworkschool">Practical Workschool</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="TendersAndJobs">Tenders/Jobs</a></li>
+
+
+                <li class="dropdown"><a href="registrations" class="active"><span>Registrations</span> <i
+                            class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="HowToRegister">How to register</a></li>
+                        <li><a href="AccreditedProgrammes">
+                                Accredited Programmes</a></li>
+                        <li><a href="E-Log">e-Log Maintain Work Record</a></li>
+                        <li><a href="CET" class="active">
+                                CPD Activities and Allocation</a></li>
+                        <li><a href="RestrictionCodes">Restriction Codes</a></li>
+                        <li><a href="Learnership">
+                                Learnership</a></li>
+
+                    </ul>
+                </li>
+
+
+
+                <li><a href="ProfessionalFees">Professional Fees</a></li>
+
+
+
+                <li class="dropdown"><a href="standards"><span>Standards</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="MunicipalRatingStandards">
+                                Municipal Rating Standards</a></li>
+                        <li><a href="InternationalValuationStandards">
+                                International Valuation Standards</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown"><a href="LodgeALegalCaseOrComplaint"><span>Legal</span> <i
+                            class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="governance">Governance</a></li>
+                        <!-- <li><a href="">Lodge a legal case</a></li>
+                        <li class="dropdown"><a href=""><span>Code of conduct</span> <i
+                                    class="bi bi-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="LodgeALegalCaseOrComplaint">Lodge a legal case or
+                                        complaint</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </li>
+
+                <li class="dropdown"><a href="FindValuer"><span>Find Valuer</span></a>
+                    <!-- <ul>
+                    <li><a href="#" (click)="goToContruction(true)">
+                            Name search</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">Search by Council Number</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">
+                            Search by Category</a></li>
+                    <li><a href="#" (click)="goToContruction(true)">Member Search</a></li>
+                </ul> -->
+                </li>
+
+
+
+
+
+
+
+                <li><a class="nav-link scrollto" (click)="toApp()" href="">Log In</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+    </div>
+</header>
+
+
+
+<!-- Content Starts -->
+<div class="section-title" data-aos="zoom-out" style="padding-top: 100px;padding-left: 10px;">
+    <h2 style="font-size: 20px;">CPD Activities and Allocation </h2>
+</div>
+<div class="section-title" data-aos="zoom-out" style="padding-top: 10px;padding-bottom: 460px;">
+    <h4 style="font-size: 16px;text-align: center;">Busy updating </h4>
+</div>
+<!-- <div style="margin-left: 20%;font-size: 14px;padding-right: 12%;">
+    <p><b>Click on the below link for a list of CPD activities and allocation of CPD points/hours</b></p>
+    <p><b class="hyper" (click)="openCETPDF1()">CET_Point_Allocation_Activit.pdf</b></p>
+    <p><b class="hyper" (click)="openCETPDF2()">CET_Progress_Report_From_10A.xls</b></p>
+    <br>
+    <ol type="1">
+        <li><b class="hyper" (click)="openCETPDF3()">Please CLICK HERE for UCT CPD Programme</b></li>
+        <li><b class="hyper" (click)="openCETPDF4()">Please CLICK HERE for UCT CPD Programme</b></li>
+        <li><b class="hyper" (click)="openCETPDF5()">Please CLICK HERE for UCT CPD Programme</b></li>
+        <li><b class="hyper" (click)="openCETPDF5()">Please CLICK HERE for UCT CPD Programme</b></li>
+        <li><b class="hyper" (click)="openCETPDF6()">Please CLICK HERE for UCT CPD Programme</b></li>
+    </ol>
+    <br>
+    <p><b>CPD Progress Report </b></p>
+    <br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" class="tableHeaders">Item No.</th>
+                <th scope="col" class="tableHeaders">Item Name</th>
+                <th scope="col" class="tableHeaders">Posted By</th>
+                <th scope="col" class="tableHeaders">Date Posted</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>No</td>
+                <td>Data</td>
+                <td>Currently</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div> -->
+
+<!-- Footer Starts -->
+<app-footer style="margin-top: 8% !important;
+display: block;"></app-footer>
+<!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+    [style.visibility]="(bottomscrollarrow == false) ? 'hidden' : 'unset'"
+    [style.opacity]="(bottomscrollarrow == false) ? '0' : '1'"><i class="bi bi-arrow-up-short"></i></a>
